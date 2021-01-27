@@ -22,7 +22,9 @@ export const menuActions = () => {
     });
   };
   clickMenu(".menu-button");
+  clickMenu(".menu-blog");
   clickMenu(".menu-portfolio");
+  clickMenu(".menu-about");
   clickMenu(".menu-contact");
   
   document.querySelector(".sect-1")?.addEventListener("click", () => {

@@ -1368,3 +1368,19 @@ body.active {
     background-size: 15px;
   }
 }
+
+
+/* DEMO */
+
+.blog-demo,
+.about-demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 3rem;
+  min-height: 100vh;
+  width: 100%;
+  color: #000;
+  background: #cecece;
+}

@@ -1,7 +1,7 @@
 export const cursorEffect = () => {
   /*  CURSOR POINTER
       =============================== */
-      let innerCursor = document?.querySelector(".inner-cursor");
+      let innerCursor = document.querySelector(".inner-cursor");
   
       document.addEventListener("mousemove", moveCursor);
       

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 const ScrollToTop = () => {
 
   const scroll = () => {
-    var scroll = document.querySelector(".scrollTop");
+    const scroll = document.querySelector(".scrollTop");
     scroll.classList.toggle("active", window.scrollY > 200);
   }
 

@@ -61,11 +61,11 @@ const Menu = () => {
         <div className="menu-container">
           <div className="contact">
             <div className="menu-items">
-              <li><Link to='/blog' >Blog</Link></li>
+              <li><Link to='/blog' className="menu-blog" >Blog</Link></li>
               <li>
-                <Link to='/#portfolio' className="menu-portfolio">Portafolio</Link>
+                <a href='/#portfolio' className="menu-portfolio">Portafolio</a>
               </li>
-              <li><Link to='/about' >Sobre Mi</Link></li>
+              <li><Link to='/about' className="menu-about" >Sobre Mi</Link></li>
               <li><a className="menu-contact" href="#contact">Contacto</a></li>
             </div>
             <div className="contact-desc">
