@@ -5,6 +5,8 @@ import React from 'react';
 
 const Page404 = () => {
 
+  window.scrollTo(0, 0);
+  
   return (
     <>
       <h1>Esta Pagina no existe pa!</h1>

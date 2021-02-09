@@ -134,7 +134,7 @@ main .sect-1 .picture {
 }
 main .sect-1 .picture img {
   width: 60rem;
-  filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.4));
+  /* filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.4)); */
 }
 main.active .sect-1 .picture {
   right: calc(23% - 30rem);

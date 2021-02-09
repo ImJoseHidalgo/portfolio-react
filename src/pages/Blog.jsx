@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Blog = () => {
+
+  window.scrollTo(0, 0);
+
   return (
     <>
       <div className='blog-demo'>
