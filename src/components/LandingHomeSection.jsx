@@ -1,9 +1,12 @@
 import React from 'react'
 import proximoIcon from '../images/proximo.svg';
 import joseImg from '../images/jose.png';
+import { useSelector } from 'react-redux';
 
 
 const LandingHomeSection = () => {
+  const { pageContent } = useSelector(state => state.lang)
+
   return (
     <>
       {/* <!-- SECCIÓN 1 (LANDING)
@@ -21,7 +24,7 @@ const LandingHomeSection = () => {
         <div className="portf-container">
           <a href="#portfolio" >
             <p className="name">
-              <i><img src={proximoIcon} alt="arrow" /></i> PORTFOLIO
+              <i><img src={proximoIcon} alt="arrow" /></i> {pageContent.pl.toUpperCase()}
             </p>
           </a>
         </div>

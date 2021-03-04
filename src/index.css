@@ -24,9 +24,10 @@
   --line: #fff;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+  /* font-family: 'Inter', sans-serif; */
 }
 h3 {
   font-size: 28px;
@@ -42,16 +43,16 @@ li {
 
 /* FOCUS ACTIONS
       =============================== */
-body#en .main-container.active .languages a:nth-child(1),
-body#es .main-container.active .languages a:nth-child(2) {
+body#en .main-container.active .languages button:nth-child(1),
+body#es .main-container.active .languages button:nth-child(2) {
   color: var(--textColorDark);
 }
-body#en .main-container .languages a:nth-child(1),
-body#es .main-container .languages a:nth-child(2) {
+body#en .main-container .languages button:nth-child(1),
+body#es .main-container .languages button:nth-child(2) {
   color: var(--lightBackground);
 }
-body#en .main-container .languages.active a:nth-child(1),
-body#es .main-container .languages.active a:nth-child(2) {
+body#en .main-container .languages.active button:nth-child(1),
+body#es .main-container .languages.active button:nth-child(2) {
   color: var(--textColorDark);
 }
 
@@ -685,13 +686,16 @@ main .sect-4 .icon-footer img {
       display: flex;
       align-items: center;
     }
-    .header-container .languages a {
+    .header-container .languages button {
       margin-left: 0.7rem;
       font-size: 1.6rem;
       font-weight: 600;
       letter-spacing: 0.1rem;
       transition: 0.5s;
       color: var(--textColorGray);
+      background: transparent;
+      outline: none;
+      border: none;
     }
     
     /* BOTTOM
@@ -1284,13 +1288,13 @@ body.active {
 
 /* SCroll 
 ==================== */
-.scrollTop {
+/* .scrollTop {
   position: fixed;
   bottom: 80px;
   right: -100px;
   width: 40px;
   height: 40px;
-  /* background: rgba(0, 0, 0, 0.9) url(../images/proximo.svg); */
+  background: rgba(0, 0, 0, 0.9) url(../images/proximo.svg);
   transform: rotate(-90deg);
   border-radius: 6px 6px 0 0;
   background-size: 20px;
@@ -1301,7 +1305,7 @@ body.active {
   visibility: hidden;
   opacity: 0;
   transition: 0.8s;
-}
+} */
 
 .scrollTop.active {
   right: 0;

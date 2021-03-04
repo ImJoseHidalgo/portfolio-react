@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import { Scroll } from './ScrollToTop.styles';
 
 const ScrollToTop = () => {
 
@@ -23,7 +24,7 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className="scrollTop" onClick={scrollToTop} ></div>
+    <Scroll className="scrollTop" onClick={scrollToTop} ></Scroll>
   )
 }
 

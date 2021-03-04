@@ -3,12 +3,28 @@ import { menuActions } from '../utils/actions';
 import twitterIcon from "../images/icons/twitter.svg";
 import linkedinIcon from "../images/icons/linkedin.svg";
 import githubIcon from "../images/icons/github.svg";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setEnglish, setEspanish } from '../actions/lang';
 
 const Menu = () => {
+  // const { pathname } = useLocation();
+  // console.log(pathname);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     menuActions();
   }, []);
+
+  const setLangEnglish = () => {
+    dispatch(setEnglish());
+    document.body.id = 'en';
+  }
+  
+  const setLangEspanish = () => {
+    dispatch(setEspanish());
+    document.body.id = 'es';
+  }
 
   return (<>
       {/* <!-- BORDES Y BOTON MENU
@@ -20,8 +36,8 @@ const Menu = () => {
               <Link to='/' >J<span>OSÉ</span>H<span>IDALGO</span></Link>
             </div>
             <div className="languages">
-              <Link to='/' className="lang-icon" >EN</Link>
-              <Link to='/' className="lang-icon" >ES</Link>
+              <button onClick={setLangEnglish} className="lang-icon" >EN</button>
+              <button onClick={setLangEspanish} className="lang-icon" >ES</button>
             </div>
           </div>
         </header>
