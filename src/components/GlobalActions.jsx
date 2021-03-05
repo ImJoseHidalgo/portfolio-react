@@ -1,7 +1,7 @@
 import React from 'react';
-import Menu from './Menu';
-import ScrollToTop from './ScrollToTop';
-import Cursor from './Cursor';
+import Menu from './ui/Menu/Menu';
+import ScrollToTop from './ui/ScrollToTop/ScrollToTop';
+import Cursor from './ui/Cursor/Cursor';
 
 const GlobalActions = () => {
   return (

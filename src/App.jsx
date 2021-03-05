@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ContactFooter from './components/ContactFooter';
+import ContactFooter from './components/ui/Footer/ContactFooter';
 import GlobalActions from './components/GlobalActions';
-import About from './components/pages/About';
-import Blog from './components/pages/Blog';
-import Home from './components/pages/Home';
-import Page404 from './components/pages/Page404';
-import { footerObserver, topObserver } from './utils/intersectionObserver';
+import About from './components/pages/AboutScreen/AboutScreen';
+import Blog from './components/pages/BlogScreen/BlogScreen';
+import Home from './components/pages/HomeScreen/Home';
+import Page404 from './components/pages/404Screen/Page404';
+import { footerObserver } from './utils/intersectionObserver';
+import PortfolioScreen from './components/pages/Portfolioscreen/PortfolioScreen';
+import ContactScreen from './components/pages/ContactScreen/ContactScreen';
 
 const App = () => {
 
   useEffect(() => {
     footerObserver();
-    // topObserver();
   }, []);
 
   return (
@@ -23,6 +24,8 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
         <Route exact path='/blog' component={Blog} />
+        <Route exact path='/portfolio' component={PortfolioScreen} />
+        <Route exact path='/contact' component={ContactScreen} />
         <Route component={Page404} />
       </Switch>
       <ContactFooter />

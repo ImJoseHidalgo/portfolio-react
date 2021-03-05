@@ -22,6 +22,7 @@ export const menuActions = () => {
     });
   };
   clickMenu(".menu-button");
+  clickMenu(".menu-home");
   clickMenu(".menu-blog");
   clickMenu(".menu-portfolio");
   clickMenu(".menu-about");
@@ -30,7 +31,6 @@ export const menuActions = () => {
   document.querySelector(".sect-1")?.addEventListener("click", () => {
     document.documentElement.classList.toggle("color");
   });
-  
   
   
 }

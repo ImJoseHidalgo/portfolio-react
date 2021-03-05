@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { topObserver } from '../../utils/intersectionObserver';
+import { topObserver } from '../../../utils/intersectionObserver';
 
 
 const About = () => {
@@ -7,6 +7,7 @@ const About = () => {
   window.scrollTo(0, 0);
   useEffect(() => {
     topObserver();
+    document.title = 'Sobre mi | José Hidalgo | Frontend Developer';
   }, [])
 
   return (

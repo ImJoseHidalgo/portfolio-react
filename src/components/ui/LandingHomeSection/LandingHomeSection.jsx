@@ -1,6 +1,6 @@
 import React from 'react'
-import proximoIcon from '../images/proximo.svg';
-import joseImg from '../images/jose.png';
+import proximoIcon from '../../../images/proximo.svg';
+import joseImg from '../../../images/jose.png';
 import { useSelector } from 'react-redux';
 
 

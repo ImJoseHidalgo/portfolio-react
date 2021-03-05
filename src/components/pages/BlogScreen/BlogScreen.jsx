@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { topObserver } from '../../utils/intersectionObserver';
+import { topObserver } from '../../../utils/intersectionObserver';
 
 const Blog = () => {
 
   window.scrollTo(0, 0);
   useEffect(() => {
     topObserver();
+    document.title = 'Blog | José Hidalgo | Frontend Developer';
   }, [])
 
   return (

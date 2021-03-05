@@ -1,9 +1,12 @@
 import React from 'react';
-import twitterIcon from '../images/icons/twitter.svg';
-import instagramIcon from '../images/icons/instagram.svg';
-import linkedinIcon from '../images/icons/linkedin.svg';
+import twitterIcon from '../../../images/icons/twitter.svg';
+import instagramIcon from '../../../images/icons/instagram.svg';
+import linkedinIcon from '../../../images/icons/linkedin.svg';
+import { useSelector } from 'react-redux';
 
 const ContactFooter = () => {
+  const { text, contDesc } = useSelector(state => state.lang.pageContent.menu);
+
   return (
     <>
      {/* <!-- SECCIÓN 4 (CONTACTO)
@@ -11,15 +14,12 @@ const ContactFooter = () => {
       <div className="sect-4" id="contact">
         <div className="container">
           <div className="contact-left">
-            <h3>Quieres trabajar conmigo?</h3>
+            <h3>{text}</h3>
           </div>
           <div className="contact-right">
-            <p>
-              Si deseas comunicarte conmigo o te interesa comenzar un proyecto
-              juntos, pónte en contacto.
-            </p>
-            <a className="email" href="mailto:josehidalgo990@gmail.com" >Envíame un Email</a>
-            <p className="x">O envíame un mensaje directo en mis redes sociales.</p>
+            <p>{contDesc.desc}</p>
+            <a className="email" href="mailto:josehidalgo990@gmail.com" >{contDesc.em}</a>
+            <p className="x">{contDesc.so}</p>
             <div className="contact-footer-social">
               <div className="icon-footer">
                 <a target="_blank" rel='noreferrer' href="https://twitter.com/imjosehidalgo"><img src={twitterIcon} alt="Twitter" /></a>

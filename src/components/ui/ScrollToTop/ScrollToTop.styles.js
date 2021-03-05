@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import arrow from '../images/proximo.svg';
+import arrow from '../../../images/proximo.svg';
 
 export const Scroll = styled.div`
   position: fixed;

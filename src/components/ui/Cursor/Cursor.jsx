@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { cursorEffect } from '../utils/cursorPointer';
+import { cursorEffect } from '../../../utils/cursorPointer';
 
 const Cursor = () => {
   let {pathname} = useLocation();

@@ -1,9 +1,11 @@
 import React from 'react';
-import demo6 from '../images/6.jpg';
-import demo10 from '../images/10.png';
-import cssIcon from "../images/icons/css.svg";
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import CardPortfolio from '../CardPortfolio/CardPortfolio';
 
 const PortfolioSection = () => {
+  const { pageContent } = useSelector(state => state.lang)
+
   return (
     <>
       {/* <!-- SECCIÓN 3 (PORTAFOLIO)
@@ -11,12 +13,16 @@ const PortfolioSection = () => {
       <div className="sect-3" id="portfolio">
         <section className="container">
           <div className="title">
-            <h2>Portfolio</h2>
+            <h2>{pageContent.pl.toUpperCase()}</h2>
             <div className="line"></div>
             <h3>Algunos de mis proyectos de estos ultimos meses</h3>
+            <Link to='/portfolio'>Ve todos mis proyectos</Link>
           </div>
           <div className="previews">
-            <div className="card">
+            <CardPortfolio />
+            <CardPortfolio />
+            <CardPortfolio />
+            {/* <div className="card">
               <img src={demo10} alt="a" />
               <div className="content">
                 <div>
@@ -153,7 +159,7 @@ const PortfolioSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div> 

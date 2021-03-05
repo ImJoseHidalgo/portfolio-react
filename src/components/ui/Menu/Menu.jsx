@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import { menuActions } from '../utils/actions';
-import twitterIcon from "../images/icons/twitter.svg";
-import linkedinIcon from "../images/icons/linkedin.svg";
-import githubIcon from "../images/icons/github.svg";
-import { Link, useLocation } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { setEnglish, setEspanish } from '../actions/lang';
+import { menuActions } from '../../../utils/actions';
+import twitterIcon from "../../../images/icons/twitter.svg";
+import linkedinIcon from "../../../images/icons/linkedin.svg";
+import githubIcon from "../../../images/icons/github.svg";
+import { Link, NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { setEnglish, setEspanish } from '../../../actions/lang';
+import { MainContainer, MenuBackGround, MenuButton, MenuContainer, MenuStyles } from './Menu.styles';
 
 const Menu = () => {
-  // const { pathname } = useLocation();
-  // console.log(pathname);
   const dispatch = useDispatch();
+  const { footer, menuList, contDesc } = useSelector(state => state.lang.pageContent.menu);
 
   useEffect(() => {
     menuActions();
@@ -29,11 +29,11 @@ const Menu = () => {
   return (<>
       {/* <!-- BORDES Y BOTON MENU
       =============================== --> */}
-      <div className="main-container">
+      <MainContainer className="main-container">
         <header className="header">
           <div className="header-container">
             <div className="logo">
-              <Link to='/' >J<span>OSÉ</span>H<span>IDALGO</span></Link>
+              <Link to='/' id='home-link' >J<span>OSÉ</span>H<span>IDALGO</span></Link>
             </div>
             <div className="languages">
               <button onClick={setLangEnglish} className="lang-icon" >EN</button>
@@ -43,11 +43,13 @@ const Menu = () => {
         </header>
         <div className="bottom">
           <div className="menu-footer">
-            <p>© 2020 José Hidalgo - All rights reserved.</p>
+            <p>{footer}</p>
             <ul>
-              <li><Link to='/' >Inicio</Link></li>
-              <li><Link to='/blog' >Blog</Link></li>
-              <li><Link to='/about' >Sobre mi</Link></li>
+              <li><Link to='/' >{menuList.ho}</Link></li>
+              <li><Link to='/blog' >{menuList.bl}</Link></li>
+              <li><Link to='/about' >{menuList.ab}</Link></li>
+              <li><Link to='/portfolio' >{menuList.po}</Link></li>
+              <li><Link to='/contact' >{menuList.co}</Link></li>
             </ul>
           </div>
         </div>
@@ -65,32 +67,28 @@ const Menu = () => {
           </div>
         </div>
         <div className="left"></div>
-        <div className="menu-button">
+        <MenuButton className="menu-button">
           <div className="button"></div>
           <p>MENU</p>
-        </div>
-      </div>
+        </MenuButton>
+      </MainContainer>
       {/* <!-- MENU
       =============================== --> */}
-      <div className="menu">
-        <div className="menu-background"></div>
-        <div className="menu-container">
+      <MenuStyles className="menu">
+        <MenuBackGround className="menu-background"></MenuBackGround>
+        <MenuContainer className="menu-container">
           <div className="contact">
             <div className="menu-items">
-              <li><Link to='/blog' className="menu-blog" >Blog</Link></li>
-              <li>
-                <a href='/#portfolio' className="menu-portfolio">Portafolio</a>
-              </li>
-              <li><Link to='/about' className="menu-about" >Sobre Mi</Link></li>
-              <li><a className="menu-contact" href="#contact">Contacto</a></li>
+              <li><NavLink activeClassName='link__active' exact to='/' className="menu-home" >{menuList.ho}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/blog' className="menu-blog" >{menuList.bl}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/about' className="menu-about" >{menuList.ab}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/portfolio' className="menu-portfolio">{menuList.po}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to="/contact" className="menu-contact">{menuList.co}</NavLink></li>
             </div>
             <div className="contact-desc">
-              <p>
-                Si deseas comunicarte conmigo o te interesa comenzar un proyecto
-                juntos, pónte en contacto.
-              </p>
-              <a className="menu-email" href="mailto:josehidalgo990@gmail.com" >Envíame un correo</a>
-              <p className="mobile">O envíame un mensaje directo en mis redes sociales.</p>
+              <p>{contDesc.desc}</p>
+              <a className="menu-email" href="mailto:josehidalgo990@gmail.com" >{contDesc.em}</a>
+              <p className="mobile">{contDesc.so}</p>
               <div className="social-container">
                 <div className="icon">
                   <a target="_blank" rel='noreferrer' href="https://twitter.com/imjosehidalgo" ><img src={twitterIcon} alt="Twitter" /></a>
@@ -104,8 +102,8 @@ const Menu = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </MenuContainer>
+      </MenuStyles>
     </>
   )
 }

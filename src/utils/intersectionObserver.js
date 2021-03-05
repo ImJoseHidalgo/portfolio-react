@@ -29,27 +29,27 @@ sectionOneObserver.observe(sectionOne);
 /* PORTFOLIO FOCUS
 =============================== */
 
-const menuPortfolio = document.querySelector(".menu-items");
-const portfolioSection = document.querySelector(".sect-3");
+// const menuPortfolio = document.querySelector(".menu-items");
+// const portfolioSection = document.querySelector(".sect-3");
 
-const portfolioOptions = {
-  threshold: 0,
-};
+// const portfolioOptions = {
+//   threshold: 0,
+// };
 
-const portfolioObserver = new IntersectionObserver(function (
-  entries,
-  portfolioObserver
-) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      menuPortfolio.classList.add("portfolio-focus");
-    } else {
-      menuPortfolio.classList.remove("portfolio-focus");
-    }
-  });
-},
-portfolioOptions);
-portfolioObserver.observe(portfolioSection);
+// const portfolioObserver = new IntersectionObserver(function (
+//   entries,
+//   portfolioObserver
+// ) {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       menuPortfolio.classList.add("portfolio-focus");
+//     } else {
+//       menuPortfolio.classList.remove("portfolio-focus");
+//     }
+//   });
+// },
+// portfolioOptions);
+// portfolioObserver.observe(portfolioSection);
 
 /* FOOTER MENU - CONTACT FOCUS
   =============================== */
@@ -96,10 +96,10 @@ const menuObserver = new IntersectionObserver(function (entries, menuObserver) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       menuButton.classList.add("light-active");
-      menuPortfolio.classList.remove("portfolio-focus");
+      // menuPortfolio.classList.remove("portfolio-focus");
     } else {
       menuButton.classList.remove("light-active");
-      menuPortfolio.classList.add("portfolio-focus");
+      // menuPortfolio.classList.add("portfolio-focus");
     }
   });
 }, menuOptions);
@@ -111,9 +111,9 @@ export const footerObserver = () => {
   =============================== */
 
 const footerMenu = document.querySelector(".menu-footer");
-const menuContact = document.querySelector(".menu-items");
 const contactSection = document.querySelector(".sect-4");
-const menuPortfolio = document.querySelector(".menu-items");
+// const menuContact = document.querySelector(".menu-items");
+// const menuPortfolio = document.querySelector(".menu-items");
 
 const contactOptions = {
   threshold: 0,
@@ -127,12 +127,13 @@ const contactObserver = new IntersectionObserver(function (
     if (entry.isIntersecting) {
       footerMenu.classList.add("active");
       footerMenu.classList.remove("active-menu");
-      menuContact.classList.add("contact-focus");
-      menuPortfolio.classList.remove("portfolio-focus");
+      // menuContact.classList.add("contact-focus");
+      // menuPortfolio.classList.remove("portfolio-focus");
     } else {
-      menuContact.classList.remove("contact-focus");
       footerMenu.classList.remove("active");
-      menuPortfolio.classList.add("portfolio-focus");
+      footerMenu.classList.add("active-menu");
+      // menuContact.classList.remove("contact-focus");
+      // menuPortfolio.classList.add("portfolio-focus");
     }
   });
 },
