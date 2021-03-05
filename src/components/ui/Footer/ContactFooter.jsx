@@ -3,6 +3,7 @@ import twitterIcon from '../../../images/icons/twitter.svg';
 import instagramIcon from '../../../images/icons/instagram.svg';
 import linkedinIcon from '../../../images/icons/linkedin.svg';
 import { useSelector } from 'react-redux';
+import { FooterSection } from './Footer.styles';
 
 const ContactFooter = () => {
   const { text, contDesc } = useSelector(state => state.lang.pageContent.menu);
@@ -11,7 +12,7 @@ const ContactFooter = () => {
     <>
      {/* <!-- SECCIÓN 4 (CONTACTO)
       =============================== --> */}
-      <div className="sect-4" id="contact">
+      <FooterSection className="sect-4" id="contact">
         <div className="container">
           <div className="contact-left">
             <h3>{text}</h3>
@@ -33,7 +34,7 @@ const ContactFooter = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </FooterSection> 
     </>
   )
 }

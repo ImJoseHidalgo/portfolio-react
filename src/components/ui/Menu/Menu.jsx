@@ -45,11 +45,11 @@ const Menu = () => {
           <div className="menu-footer">
             <p>{footer}</p>
             <ul>
-              <li><Link to='/' >{menuList.ho}</Link></li>
-              <li><Link to='/blog' >{menuList.bl}</Link></li>
-              <li><Link to='/about' >{menuList.ab}</Link></li>
-              <li><Link to='/portfolio' >{menuList.po}</Link></li>
-              <li><Link to='/contact' >{menuList.co}</Link></li>
+              <li><NavLink activeClassName='link__active' exact to='/' >{menuList.ho}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/blog' >{menuList.bl}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/about' >{menuList.ab}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/portfolio' >{menuList.po}</NavLink></li>
+              <li><NavLink activeClassName='link__active' to='/contact' >{menuList.co}</NavLink></li>
             </ul>
           </div>
         </div>

@@ -2,21 +2,23 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CardPortfolio from '../CardPortfolio/CardPortfolio';
+import { Container, Section3 } from './PortfolioHomeSection.styles';
 
 const PortfolioSection = () => {
   const { pageContent } = useSelector(state => state.lang)
+  const { desc, butt } = useSelector(state => state.lang.pageContent.homePort);
 
   return (
     <>
       {/* <!-- SECCIÓN 3 (PORTAFOLIO)
       =============================== --> */}
-      <div className="sect-3" id="portfolio">
-        <section className="container">
+      <Section3 className="sect-3" id="portfolio">
+        <Container className="container">
           <div className="title">
             <h2>{pageContent.pl.toUpperCase()}</h2>
             <div className="line"></div>
-            <h3>Algunos de mis proyectos de estos ultimos meses</h3>
-            <Link to='/portfolio'>Ve todos mis proyectos</Link>
+            <h3>{desc}</h3>
+            <Link to='/portfolio'>{butt}</Link>
           </div>
           <div className="previews">
             <CardPortfolio />
@@ -161,8 +163,8 @@ const PortfolioSection = () => {
               </div>
             </div> */}
           </div>
-        </section>
-      </div> 
+        </Container>
+      </Section3> 
     </>
   )
 }

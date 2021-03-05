@@ -5,6 +5,10 @@ export const english = {
     desc: `I'm José Hidalgo Frontend developer focused on building beautiful interfaces and experiences`,
     butt: 'MORE ABOUT ME'
   },
+  homePort: {
+    desc: 'Some of my latest projects',
+    butt: 'See all my projects',
+  },
   menu: {
     footer: 'Developed by José Hidalgo',
     text: 'Want to work with me?',
@@ -28,6 +32,10 @@ export const spanish = {
     tit: 'Hola! 👋',
     desc: `Soy José Hidalgo, desarrollador frontend enfocado en construir bellas interfases y experiencias de usuario.`,
     butt: 'MÁS DE MI'
+  },
+  homePort: {
+    desc: 'Algunos de mis últimos proyectos',
+    butt: 'Mira todos mis proyectos',
   },
   menu: {
     footer: 'Desarrollado por José Hidalgo',

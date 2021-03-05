@@ -18,4 +18,17 @@ export const Scroll = styled.div`
   visibility: hidden;
   opacity: 0;
   transition: 0.8s;
+
+  &.active {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    bottom: 130px;
+    width: 40px;
+    height: 40px;
+    background-size: 15px;
+  }
 `

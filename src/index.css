@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb:active {
 
 /* main.css
 =================================== */
-.main::after,
+/* .main::after,
 .main:before {
   content: "";
   position: fixed;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb:active {
   background-image: radial-gradient(
     circle at right,
     var(--borders),
-    /*rgb(235, 235, 235)*/ var(--lightBackground)
+    var(--lightBackground)
   );
 }
 .main::before {
@@ -101,29 +101,29 @@ body::-webkit-scrollbar-thumb:active {
 }
 .main.active::before {
   width: 23%;
-}
-main .container {
+} */
+/* main .container {
   max-width: 105rem;
   margin: auto;
-}
+} */
 
 /* LANDING
     =============================== */
-main .sect-1 {
+/* main .sect-1 {
   position: relative;
   height: 100vh;
-}
-main .sect-2 {
+} */
+/* main .sect-2 {
   height: 100vh;
-}
-main .sect-3 {
-  background: var(--lightBackground); /*background: #ecf0f3;*/
+} */
+/* main .sect-3 {
+  background: var(--lightBackground);
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-main .sect-1 .picture {
+/* main .sect-1 .picture {
   position: fixed;
   z-index: 0;
   right: calc(50% - 30rem);
@@ -133,16 +133,16 @@ main .sect-1 .picture {
   justify-content: center;
   align-items: flex-end;
   transition: 1s;
-}
-main .sect-1 .picture img {
-  width: 60rem;
-  /* filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.4)); */
-}
-main.active .sect-1 .picture {
+} */
+/* main .sect-1 .picture img {
+  width: 60rem; 
+  filter: drop-shadow(0 0 5rem rgba(0, 0, 0, 0.4));
+} */
+/* main.active .sect-1 .picture {
   right: calc(23% - 30rem);
-}
+} */
 /* Name Container */
-main .sect-1 .name-container {
+/* main .sect-1 .name-container {
   position: fixed;
   z-index: 2;
   bottom: 5%;
@@ -163,15 +163,15 @@ main .sect-1 .portf-container .name {
   opacity: 1;
   transform: scaleY(1);
   transition: 0.3s 0.5s;
-}
-main.active .sect-1 .name-container .name,
+} */
+/* main.active .sect-1 .name-container .name,
 main.active .sect-1 .name-container .prof,
 main.active .sect-1 .portf-container .name {
   opacity: 0;
   transform: scaleY(0);
   transition: 0.3s;
-}
-main .sect-1 .portf-container .name {
+} */
+/* main .sect-1 .portf-container .name {
   color: var(--lightBackground);
 }
 
@@ -188,10 +188,10 @@ main .sect-1 .portf-container a {
 }
 main .sect-1 .portf-container img {
   width: 2rem;
-}
+} */
 /* SOBRE MI
     =============================== */
-main .sect-2 .container {
+/* main .sect-2 .container {
   position: fixed;
   z-index: 1;
   top: 50%;
@@ -215,14 +215,14 @@ main .sect-2 .container span {
 main .sect-2 .container .bt {
   transform: scaleY(0);
   transition: 0.3s;
-}
-main.active .sect-2 .container h2,
+} */
+/* main.active .sect-2 .container h2,
 main.active .sect-2 .container a,
 main.active .sect-2 .container .bt {
   transform: scaleY(1);
   transition: transform 0.3s 0.6s;
-}
-main .sect-2 .container .btn {
+} */
+/* main .sect-2 .container .btn {
   position: relative;
   padding: 1rem 2rem;
   border: .2rem solid var(--darkBackground);
@@ -254,19 +254,13 @@ main .sect-2 .container .btn span {
 main .sect-2 .container .btn:hover span {
   width: 30rem;
   height: 30rem;
-}
+} */
 /* BLOG
     =============================== */
-main .blog-section {
+/* main .blog-section {
   position: relative;
   z-index: 2;
   background: var(--darkBackground);
-  /*background-image: radial-gradient(
-    circle at right,
-    var(--line),
-    var(--darkBackground),
-    var(--darkBackground)
-  );*/
 }
 main .blog-section .container {
   padding: 10rem 0;
@@ -280,15 +274,15 @@ main .blog-section .container h2:first-child {
 }
 main .blog-section .container h2:last-child {
   font-size: 4rem;
-}
+} */
 /* PORTFOLIO
     =============================== */
-main .sect-3 {
+/* main .sect-3 {
   position: relative;
   z-index: 2;
   min-height: 100vh;
-}
-main .sect-3 .container {
+} */
+/* main .sect-3 .container {
   height: auto;
   position: relative;
   display: flex;
@@ -319,7 +313,7 @@ main .sect-3 .container .previews {
   position: relative;
   width: 70%;
   margin-left: 5rem;
-}
+} */
 /* main .sect-3 .container .previews .card {
   position: relative;
   margin-bottom: 2rem;
@@ -442,7 +436,7 @@ main .sect-3 .container .previews .card .content .technologies p {
 } */
 /* CONTACT
     =============================== */
-main .sect-4 {
+/* main .sect-4 {
   position: relative;
   z-index: 2;
   height: 100%;
@@ -456,7 +450,6 @@ main .sect-4 .container {
   grid-gap: 3rem;
 }
 main .sect-4 .contact-left h3 {
-  /* width: 70%; */
   color: var(--lightBackground);
   font-size: 5rem;
   font-weight: 700;
@@ -498,12 +491,12 @@ main .sect-4 .icon-footer img {
   margin-top: 6px;
   width: 4rem;
   padding: 1rem;
-}
+} */
 
 /* RESPONSIVE
     =============================== */
 @media only screen and (max-width: 600px) {
-  .main::after,
+  /* .main::after,
   .main:before {
     width: 80%;
   }
@@ -512,8 +505,8 @@ main .sect-4 .icon-footer img {
   }
   .main.active::before {
     width: 0%;
-  }
-  main .sect-1 .picture {
+  } */
+  /* main .sect-1 .picture {
     left: calc(80% - 23rem);
   }
   main .sect-1 .picture img {
@@ -521,9 +514,9 @@ main .sect-4 .icon-footer img {
   }
   main.active .sect-1 .picture {
     left: calc(100% - 22rem);
-  }
+  } */
   /* Name Container */
-  main .sect-1 .name-container {
+  /* main .sect-1 .name-container {
     top: 15%;
     left: 10%;
     opacity: 1;
@@ -562,9 +555,9 @@ main .sect-4 .icon-footer img {
     width: 1.2rem;
     margin: 0 0 -3px 0;
     transform: rotate(180deg);
-  }
+  } */
   /* Landing Description */
-  main .sect-2 .container {
+  /* main .sect-2 .container {
     top: 30%;
     left: 10%;
     width: 70%;
@@ -577,9 +570,9 @@ main .sect-4 .icon-footer img {
   }
   main .sect-2 .container h2 strong {
     font-weight: 600;
-  }
+  } */
   /* Section 3 Portfolio */
-  main .sect-3 {
+  /* main .sect-3 {
     background: var(--lightBackground);
     height: auto;
   }
@@ -590,10 +583,10 @@ main .sect-4 .icon-footer img {
   main .sect-3 .container a {
     font-weight: 600;
     color: #2c3541;
-  }
+  } */
 
   /* Section 4 Footer Contact */
-  main .sect-4 {
+  /* main .sect-4 {
     height: 70vh;
   }
   main .sect-4 .container {
@@ -613,7 +606,7 @@ main .sect-4 .icon-footer img {
   }
   main .sect-4 .contact-right a {
     font-size: 13px;
-  }
+  } */
 }
 
 /* BORDES
@@ -1293,13 +1286,13 @@ body.active {
   transition: 0.8s;
 } */
 
-.scrollTop.active {
+/* .scrollTop.active {
   right: 0;
   visibility: visible;
   opacity: 1;
-}
+} */
 
-.inner-cursor {
+/* .inner-cursor {
   position: fixed;
   z-index: 10;
   left: 1rem;
@@ -1316,7 +1309,8 @@ body.active {
   width: 6rem;
   height: 6rem;
   transition: width 0.3s, height 0.3s;
-} /*
+}  */
+/*
 .outer-cursor {
   position: fixed;
   z-index: 5;
@@ -1350,14 +1344,14 @@ body.active {
   z-index: 10;
   pointer-events: none;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .scrollTop {
     bottom: 130px;
     width: 40px;
     height: 40px;
     background-size: 15px;
   }
-}
+} */
 
 
 /* DEMO */

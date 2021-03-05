@@ -141,6 +141,9 @@ export const MainContainer = styled.div`
   .menu-footer a:hover:before {
     transform: scaleX(1);
   }
+  .menu-footer a.link__active:before {
+    transform: scaleX(1);
+  }
   
   /* RIGHT
       =============================== */

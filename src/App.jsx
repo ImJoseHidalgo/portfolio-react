@@ -9,6 +9,7 @@ import Page404 from './components/pages/404Screen/Page404';
 import { footerObserver } from './utils/intersectionObserver';
 import PortfolioScreen from './components/pages/Portfolioscreen/PortfolioScreen';
 import ContactScreen from './components/pages/ContactScreen/ContactScreen';
+import { Main } from './App.styles';
 
 const App = () => {
 
@@ -18,18 +19,18 @@ const App = () => {
 
   return (
     <Router>
-      <main className='main'>
-      <GlobalActions />
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/blog' component={Blog} />
-        <Route exact path='/portfolio' component={PortfolioScreen} />
-        <Route exact path='/contact' component={ContactScreen} />
-        <Route component={Page404} />
-      </Switch>
-      <ContactFooter />
-      </main>
+      <Main className='main'>
+        <GlobalActions />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/blog' component={Blog} />
+          <Route exact path='/portfolio' component={PortfolioScreen} />
+          <Route exact path='/contact' component={ContactScreen} />
+          <Route component={Page404} />
+        </Switch>
+        <ContactFooter />
+      </Main>
     </Router>
   )
 }

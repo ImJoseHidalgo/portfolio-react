@@ -2,6 +2,7 @@ import React from 'react'
 import proximoIcon from '../../../images/proximo.svg';
 import joseImg from '../../../images/jose.png';
 import { useSelector } from 'react-redux';
+import { Section1 } from './LandingHomeSection.styles';
 
 
 const LandingHomeSection = () => {
@@ -11,7 +12,7 @@ const LandingHomeSection = () => {
     <>
       {/* <!-- SECCIÓN 1 (LANDING)
       =============================== --> */}
-      <div className="sect-1">
+      <Section1 className="sect-1">
         <div className="picture">
           <img src={joseImg} alt="profile" />
           {/* <!-- <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=409x2048:format=png/path/s2327599727345734/image/i20244355d30a7038/version/1549961940/image.png" alt="" /> -->
@@ -28,7 +29,7 @@ const LandingHomeSection = () => {
             </p>
           </a>
         </div>
-      </div> 
+      </Section1> 
     </>
   )
 }
