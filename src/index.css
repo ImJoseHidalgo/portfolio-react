@@ -33,7 +33,7 @@ h3 {
   font-size: 28px;
   font-weight: 900;
 }
-a, p, h1, h2, h3, h4, h5 {
+a, p, h1, h2, h3, h4, h5, li {
   color: var(--textColorDark);
   text-decoration: none;
   /* font-size: 1.6rem; */
@@ -1355,7 +1355,7 @@ body.active {
 
 
 /* DEMO */
-
+/* 
 .blog-demo,
 .about-demo {
   display: flex;
@@ -1367,4 +1367,4 @@ body.active {
   width: 100%;
   color: #000;
   background: #cecece;
-}
+} */
