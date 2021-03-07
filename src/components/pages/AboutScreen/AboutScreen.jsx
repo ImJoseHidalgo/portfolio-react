@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { topObserver } from '../../../utils/intersectionObserver';
-import { AboutMe, Container, Section1, Section2, Section3, Skills, TitleContainer } from './AboutScreen.styles';
+import { AboutMe, Container, PortfolioLink, Section1, Section2, Section3, Skills, TitleContainer } from './AboutScreen.styles';
 import wonam from '../../../images/woman.jpg';
 import firebaseIcon from '../../../images/icons/firebase.svg';
 import ad from '../../../images/icons/adobe1.svg';
@@ -15,6 +15,7 @@ import ra from '../../../images/icons/reaccionar.svg';
 import sass from '../../../images/icons/sass.svg';
 import wrd from '../../../images/icons/wordpress.svg';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -29,7 +30,7 @@ const About = () => {
   return (
     <>
       <Section1 id='top'>
-        <img loading="lazy" src={wonam} alt="perfil"/>
+        <img src={wonam} alt="perfil"/>
           <div>
             <div className="container">
             <TitleContainer>
@@ -94,6 +95,9 @@ const About = () => {
           </AboutMe>
         </div>
       </Section2>
+      <PortfolioLink>
+        <Link to='/portfolio'>{about.bt}</Link>
+      </PortfolioLink>
       <Section3>
         <Container className="container">
           <h3>{about.mhh3}</h3>

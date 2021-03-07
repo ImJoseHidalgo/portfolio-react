@@ -28,9 +28,9 @@ export const menuActions = () => {
   clickMenu(".menu-about");
   clickMenu(".menu-contact");
   
-  document.querySelector(".sect-1")?.addEventListener("click", () => {
-    document.documentElement.classList.toggle("color");
-  });
+  // document.querySelector(".sect-1")?.addEventListener("click", () => {
+  //   document.documentElement.classList.toggle("color");
+  // });
   
   
 }

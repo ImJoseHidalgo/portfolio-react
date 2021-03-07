@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Section1 = styled.div`
   min-height: 100vh;
   position: relative;
+  background: #161619;
   img {
     position: absolute;
     left: 0;
@@ -63,11 +64,14 @@ export const Section2 = styled.section`
 `
 
 export const AboutMe = styled.div`
-  padding: 10rem 0;
+  padding-bottom: 10rem;
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
+  &:first-child {
+    padding-top: 10rem;
+  }
   h1 {
     font-size: 5rem;
     text-transform: uppercase;
@@ -128,5 +132,21 @@ export const Container = styled.div`
     color: #999;
     width: 100%;
     text-align: end;
+  }
+`
+
+export const PortfolioLink = styled.div`
+  min-height: 20vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: #161619;
+    color: #fff;
   }
 `

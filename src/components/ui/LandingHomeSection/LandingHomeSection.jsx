@@ -3,6 +3,7 @@ import proximoIcon from '../../../images/proximo.svg';
 import joseImg from '../../../images/jose.png';
 import { useSelector } from 'react-redux';
 import { Section1 } from './LandingHomeSection.styles';
+import { Link } from 'react-router-dom';
 
 
 const LandingHomeSection = () => {
@@ -23,11 +24,11 @@ const LandingHomeSection = () => {
           <h2 className="prof">Frontend Developer</h2>
         </div>
         <div className="portf-container">
-          <a href="#portfolio" >
+          <Link to='/portfolio' >
             <p className="name">
               <i><img src={proximoIcon} alt="arrow" /></i> {pageContent.pl.toUpperCase()}
             </p>
-          </a>
+          </Link>
         </div>
       </Section1> 
     </>
