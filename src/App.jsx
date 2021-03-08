@@ -10,6 +10,7 @@ import { footerObserver } from './utils/intersectionObserver';
 import PortfolioScreen from './components/pages/Portfolioscreen/PortfolioScreen';
 import ContactScreen from './components/pages/ContactScreen/ContactScreen';
 import { Main } from './App.styles';
+import PostScreen from './components/pages/PostScreen/PostScreen';
 
 const App = () => {
 
@@ -24,9 +25,10 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/blog' component={Blog} />
           <Route exact path='/portfolio' component={PortfolioScreen} />
           <Route exact path='/contact' component={ContactScreen} />
+          <Route exact path='/blog' component={Blog} />
+          <Route exact path='/blog/:slug' component={PostScreen} />
           <Route component={Page404} />
         </Switch>
         <ContactFooter />
