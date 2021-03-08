@@ -109,7 +109,7 @@ export const english = {
     fname: 'Your name',
     femail: 'Your email',
     fsubject: 'Subject',
-    ftext: "YOUR MESSAGE   *To make a line break press the 'Shift + Enter' keys on the keyboard",
+    ftext: "YOUR MESSAGE",
     fbutton: 'Send Message',
   }
 }
@@ -223,8 +223,8 @@ export const spanish = {
     desc: "es",
     fname: 'Tu nombre',
     femail: 'Tu email',
-    fsubject: 'Sujeto',
-    ftext: "TU MENSAJE   *Para hacer un salto de linea preciona las teclas 'Shift + Enter' en el teclado",
+    fsubject: 'Asunto',
+    ftext: "TU MENSAJE",
     fbutton: 'Enviar mensaje',
   }
 }
