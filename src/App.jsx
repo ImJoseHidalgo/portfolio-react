@@ -23,12 +23,12 @@ const App = () => {
       <Main className='main'>
         <GlobalActions />
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/blog/:slug' component={PostScreen} />
+          <Route exact path='/blog' component={Blog} />
           <Route exact path='/about' component={About} />
           <Route exact path='/portfolio' component={PortfolioScreen} />
           <Route exact path='/contact' component={ContactScreen} />
-          <Route exact path='/blog' component={Blog} />
-          <Route exact path='/blog/:slug' component={PostScreen} />
+          <Route exact path='/' component={Home} />
           <Route component={Page404} />
         </Switch>
         <ContactFooter />

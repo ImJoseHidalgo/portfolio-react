@@ -46,7 +46,7 @@ const Menu = () => {
             <p>{footer}</p>
             <ul>
               <li><NavLink activeClassName='link__active' exact to='/' >{menuList.ho}</NavLink></li>
-              <li><NavLink activeClassName='link__active' to='/blog' >{menuList.bl}</NavLink></li>
+              <li><NavLink activeClassName='link__active' exact to='/blog' >{menuList.bl}</NavLink></li>
               <li><NavLink activeClassName='link__active' to='/about' >{menuList.ab}</NavLink></li>
               <li><NavLink activeClassName='link__active' to='/portfolio' >{menuList.po}</NavLink></li>
               <li><NavLink activeClassName='link__active' to='/contact' >{menuList.co}</NavLink></li>

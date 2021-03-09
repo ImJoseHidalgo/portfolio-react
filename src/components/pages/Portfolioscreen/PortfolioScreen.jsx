@@ -26,7 +26,7 @@ const PortfolioScreen = () => {
           <h3>{t2}</h3>
           <div>
             <p>{ap1}</p>
-            <p>{ap2}</p>
+            <p>{ap2} <a className="email" target="_blank" rel='noreferrer' href="https://github.com/imjosehidalgo" >GitHub.</a></p>
           </div>
         </Container>
       </Section2>

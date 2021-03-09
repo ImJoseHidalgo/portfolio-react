@@ -79,7 +79,7 @@ export const AboutMe = styled.div`
   p {
     padding-top: 3rem;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 3rem;
   }
   p:first-child {
@@ -99,7 +99,7 @@ export const Skills = styled.div`
     margin: 1rem 0;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 400;
   }
   img {
     width: 2rem;

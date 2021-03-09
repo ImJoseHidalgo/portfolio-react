@@ -41,11 +41,16 @@ export const english = {
     mhh3: '“Choose a job you love and you will never have to work a day in your life.”',
     bt: 'See my work'
   },
+  blog: {
+    title: 'My Posts',
+    desc: 'Welcome to my blog posts page!',
+    read: 'Read post ------>'
+  },
   portfolio: {
     t1: 'My proyects',
     t2: 'About',
     ap1: 'My portfolio consists of designs for websites, applications, as well as some extra tools. In each job I put the maximum effort, perseverance, attention and creativity.',
-    ap2: 'These are some of the projects that I develop. You can also find the code of each project on my github.',
+    ap2: 'These are some of the projects that I develop. You can also find the code of each project on my',
     cards: [
       {
         title: 'React Gift Mobile Web App',
@@ -156,11 +161,16 @@ export const spanish = {
     mhh3: '"Elije un trabajo que te guste y nunca tendrás que trabajar un día de tu vida".',
     bt: 'Ve mi trabajo'
   },
+  blog: {
+    title: 'Mis Publicaciónes',
+    desc: 'Bienvenid@ a mi blog!',
+    read: 'Leer publicación ------>'
+  },
   portfolio: {
     t1: 'Mis proyectos',
     t2: 'About',
     ap1: 'Mi portafolio consta de diseños para sitios web, aplicaciones, así como algunos tools extra. En cada trabajo pongo el máximo esfuerzo, constancia, atención y creatividad.',
-    ap2: 'Estos son algunos de los proyectos que desarrolle. También podras encontrar el codigo de cada proyecto en mi github.',
+    ap2: 'Estos son algunos de los proyectos que desarrolle. También podras encontrar el codigo de cada proyecto en mi',
     cards: [
       {
         title: 'React Gift Mobile Web App',

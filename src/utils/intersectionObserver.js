@@ -145,7 +145,8 @@ export const topObserver = () => {
   const main = document.querySelector(".main");
   const mainContainer = document.querySelector(".main-container");
   const sectionOne = document.querySelector('#top');
-
+  
+  if (sectionOne) {
   const sectionOneOptions = {
     threshold: 0.9,
   };
@@ -166,4 +167,7 @@ export const topObserver = () => {
   },
   sectionOneOptions);
   sectionOneObserver.observe(sectionOne);
+  } else {
+    console.log('no encontre el documento');
+  }
 }

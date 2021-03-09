@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-// import { topObserver } from '../../../utils/intersectionObserver';
+import { topObserver } from '../../../utils/intersectionObserver';
 import sanityClient from '../../../sanity/client.js';
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
+import { Container, Section1, Title } from './PostScreen.styles';
+import { useDispatch, useSelector } from 'react-redux';
+import { startLoadingPosts } from '../../../actions/posts.js';
+import LoadingUI from '../../ui/Loading/Loading.jsx';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -11,50 +15,46 @@ function urlFor(source) {
 }
 
 const PostScreen = () => {
-  const [postData, setPostData] = useState(null);
+  const dispatch = useDispatch();
   const { slug } = useParams();
-  
+  const { posts } = useSelector(state => state.posts);
+
+  const dateOptions = {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  };
+
   window.scrollTo(0, 0);
   useEffect(() => {
-    // topObserver();
-    document.title = 'Blog | José Hidalgo';
-    sanityClient
-      .fetch(
-        `*[slug.current == "${slug}"]{
-            title,
-            slug,
-            mainImage{
-              asset->{
-                _id,
-                url
-              }
-            },
-            body,
-            "name": author->name,
-            "authorImage": author->image
-          }`
-      )
-      .then((data) => setPostData(data[0]))
-      .catch(console.error);
-  }, [slug]);
+    topObserver();
+    document.title = `${slug.charAt(0).toUpperCase() + slug.slice(1)} | José Hidalgo`;
+    {posts.length === 0 && dispatch(startLoadingPosts())}
+  }, [])
 
-  if (!postData) return <div>Loading...</div>;
+  const postData = posts.filter(post => post.slug.current?.includes(`${slug}`));
 
-  console.log(postData);
+  if (!postData[0]) return <LoadingUI />;
 
   return (
     <>
-      <h1>{postData.title}</h1>
-      <div>
-        <img src={urlFor(postData.authorImage).width(100).url()} alt="Autor Jose Hidalgo"/>
-        <h4>{postData.name}</h4>
-      </div>
-      <img src={urlFor(postData.mainImage).width(200).url()} alt="image post"/>
-      <BlockContent
-        blocks={postData.body}
-        projectId={sanityClient.clientConfig.projectId}
-        dataset={sanityClient.clientConfig.dataset}
-      />
+      <Section1>
+        <Title id="top" className='container'>
+          <div>
+            <img src={urlFor(postData[0].mainImage).width(1000).url()} alt="post"/>
+            <span>Category</span>
+          </div>
+        </Title>
+        <Container container>
+          <h5>{new Date(postData[0].publishedAt).toLocaleDateString('es-ES', dateOptions)}</h5>
+          <BlockContent
+            blocks={postData[0].body}
+            projectId={sanityClient.clientConfig.projectId}
+            dataset={sanityClient.clientConfig.dataset}
+          />
+        </Container>
+      </Section1>
     </>
   )
 }

@@ -9,7 +9,7 @@ export const Scroll = styled.div`
   height: 40px;
   background: rgba(0, 0, 0, 0.9) url(${arrow});
   transform: rotate(-90deg);
-  border-radius: 6px 6px 0 0;
+  /* border-radius: 6px 6px 0 0; */
   background-size: 20px;
   background-position: center;
   background-repeat: no-repeat;

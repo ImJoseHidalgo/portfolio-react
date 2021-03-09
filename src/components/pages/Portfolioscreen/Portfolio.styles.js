@@ -71,6 +71,9 @@ export const Container = styled.div`
   p:first-child {
     margin-bottom: 3rem;
   }
+  a {
+    text-decoration: underline
+  }
 `
 export const Section3 = styled.section`
   min-height: 100vh;
