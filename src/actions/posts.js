@@ -15,6 +15,9 @@ export const startLoadingPosts = () => {
                     url
                   }
                 },
+                categories[0]->{
+                  title
+                },
                 publishedAt,
                 body,
               }`

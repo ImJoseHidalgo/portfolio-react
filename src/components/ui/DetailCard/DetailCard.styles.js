@@ -30,16 +30,54 @@ export const Card = styled.div`
   span {
     margin: 0 2rem 0 2rem;
   }
-  a {
+  /* a {
     display: inline-block;
     font-size: 2rem;
     background: #161619;
     color: #fff;
-    /* width: 15rem; */
     padding: 1rem 2rem;
     text-align: center;
     margin-top: 4rem;
     margin-right: 3rem;
+  } */
+  a {
+    margin-top: 4rem;
+    margin-right: 3rem;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid #000;
+    transition: 300ms ease-out;
+    background: #161619;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+  }
+
+  a:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-out;
+  }
+
+  a:hover {
+    border-color: #161619;
+    color: #161619;
+  }
+
+  a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 `
 export const Grid = styled.div`

@@ -18,7 +18,10 @@ const PortfolioSection = () => {
             <h2>{pageContent.pl.toUpperCase()}</h2>
             <div className="line"></div>
             <h3>{desc}</h3>
-            <Link to='/portfolio'>{butt}</Link>
+            <Link to='/portfolio'>
+              {butt}
+              <img src="https://icongr.am/entypo/chevron-small-right.svg?size=128&color=ffffff" alt="arrow"/>
+            </Link>
           </div>
           <div className="previews">
             <CardPortfolio />

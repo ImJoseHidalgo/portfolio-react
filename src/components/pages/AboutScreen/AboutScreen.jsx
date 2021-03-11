@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { topObserver } from '../../../utils/intersectionObserver';
-import { AboutMe, Container, PortfolioLink, Section1, Section2, Section3, Skills, TitleContainer } from './AboutScreen.styles';
-import wonam from '../../../images/woman.jpg';
+import { AboutMe, Container, PortfolioLink, Section1, Section2, Section3, Skills } from './AboutScreen.styles';
 import firebaseIcon from '../../../images/icons/firebase.svg';
 import ad from '../../../images/icons/adobe1.svg';
 import ad1 from '../../../images/icons/adobe.svg';
@@ -14,8 +13,9 @@ import ph from '../../../images/icons/photoshop.svg';
 import ra from '../../../images/icons/reaccionar.svg';
 import sass from '../../../images/icons/sass.svg';
 import wrd from '../../../images/icons/wordpress.svg';
+import circle from '../../../images/circle.png';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import ButtonAnim from '../../ui/Button/ButtonAnim';
 
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <>
-      <Section1 id='top'>
+      {/* <Section1 id='top'>
         <img src={wonam} alt="perfil"/>
           <div>
             <div className="container">
@@ -40,6 +40,11 @@ const About = () => {
             </TitleContainer>
           </div>
         </div>
+      </Section1> */}
+      <Section1 id='top'>
+        <h1>{about.abh1}</h1>
+        <img src={circle} alt="circle"/>
+        <img src="https://icongr.am/entypo/chevron-small-down.svg?size=128&color=000000" alt="arrow"/>
       </Section1>
 
       <Section2>
@@ -96,7 +101,11 @@ const About = () => {
         </div>
       </Section2>
       <PortfolioLink>
-        <Link to='/portfolio'>{about.bt}</Link>
+        <ButtonAnim text={about.bt} path='/portfolio' />
+        {/* <Link to='/portfolio'>
+          {about.bt}
+          <img src="https://icongr.am/entypo/chevron-small-right.svg?size=128&color=ffffff" alt="arrow"/>
+        </Link> */}
       </PortfolioLink>
       <Section3>
         <Container className="container">

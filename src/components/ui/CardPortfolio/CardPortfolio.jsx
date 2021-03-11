@@ -22,8 +22,8 @@ const CardPortfolio = () => {
             <img loading="lazy" src={cssIcon} alt="Javascript" title="API" />
           </div>
           <div className="links">
-            <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Repo</a>
-            <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Live</a>
+            <a href="https://github.com/imjosehidalgo" className="btn">Repo</a>
+            <a href="https://github.com/imjosehidalgo" className="btn">Live</a>
           </div>
         </div>
       </div>

@@ -162,8 +162,8 @@ export const spanish = {
     bt: 'Ve mi trabajo'
   },
   blog: {
-    title: 'Mis Publicaciónes',
-    desc: 'Bienvenid@ a mi blog!',
+    title: 'Hola!!!',
+    desc: 'Éste es mi blog!',
     read: 'Leer publicación ------>'
   },
   portfolio: {

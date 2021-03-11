@@ -56,6 +56,7 @@ export const ContactForm = styled.form`
     padding: 1rem 2rem;
     text-transform: uppercase;
     margin-top: 3rem;
+    /* font-size: 1.3rem; */
     cursor: pointer;
   }
 `

@@ -15,7 +15,11 @@ const AboutHomeSection = () => {
           <h2>{pageContent.homeAbout.tit}</h2>
           <h2>{pageContent.homeAbout.desc}</h2>
           <div className="bt">
-            <Link to='/about' className="btn" ><span></span>{pageContent.homeAbout.butt}</Link>
+            <Link to='/about' className="btn" >
+              {pageContent.homeAbout.butt}
+              <img src="https://icongr.am/entypo/chevron-small-right.svg?size=128&color=ffffff" alt="arrow"/>
+            </Link>
+            {/* <ButtonAnim props='home' path='/about' text={pageContent.homeAbout.butt} /> */}
           </div>
         </div>
       </Section2> 

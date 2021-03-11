@@ -11,18 +11,22 @@ export const ListContainer = styled.div`
     margin: 0 .2rem;
   }
   h3 {
-    margin-left: 2rem;
+    margin-right: 1rem;
+    font-weight: 700;
   }
 `
 export const LinkP = styled(Link)`
   font-weight: 600;
-  background: #F15E28;
+  background: #161619;
   padding: .5rem 1rem;
-  border-radius: .2rem;
   color: #fff;
   text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 1px solid #000;
 
   &:hover {
-    background: #EF3C1F;
+    color: #000;
+    background: #fff;
   }
 `

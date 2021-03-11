@@ -10,14 +10,14 @@ const Pagination = ({ currentPage, postsPerPage, totalPosts, paginate }) => {
 
   return (
     <ListContainer>
+      <h3>Mostrando la página:</h3>
       {pageNumbers.map(number => (
         <span key={number}>
-          <LinkP to='/home' onClick={() => paginate(number)}>
+          <LinkP to={number === 1 ? '/blog' : `/blog/${number}`} onClick={() => paginate(number)}>
             {number}
           </LinkP>
         </span>
       ))}
-      <h3>Mostrando la página: {currentPage}</h3>
     </ListContainer>
   );
 };

@@ -80,7 +80,7 @@ const Menu = () => {
           <div className="contact">
             <div className="menu-items">
               <li><NavLink activeClassName='link__active' exact to='/' className="menu-home" >{menuList.ho}</NavLink></li>
-              <li><NavLink activeClassName='link__active' to='/blog' className="menu-blog" >{menuList.bl}</NavLink></li>
+              <li><NavLink activeClassName='link__active' exact to='/blog' className="menu-blog" >{menuList.bl}</NavLink></li>
               <li><NavLink activeClassName='link__active' to='/about' className="menu-about" >{menuList.ab}</NavLink></li>
               <li><NavLink activeClassName='link__active' to='/portfolio' className="menu-portfolio">{menuList.po}</NavLink></li>
               <li><NavLink activeClassName='link__active' to="/contact" className="menu-contact">{menuList.co}</NavLink></li>

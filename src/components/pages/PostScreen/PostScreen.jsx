@@ -43,7 +43,7 @@ const PostScreen = () => {
         <Title id="top" className='container'>
           <div>
             <img src={urlFor(postData[0].mainImage).width(1000).url()} alt="post"/>
-            <span>Category</span>
+            <span>{postData[0].categories.title}</span>
           </div>
         </Title>
         <Container container>

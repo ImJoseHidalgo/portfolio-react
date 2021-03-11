@@ -51,7 +51,7 @@ const Blog = () => {
               <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
                 <Post>
                   <img src={urlFor(post.mainImage.asset.url).width(400).url()} alt="blog"/>
-                  <p>Category</p>
+                  <p>{post.categories.title}</p>
                   <h3>{post.title}</h3>
                   <p>{read}</p>
                 </Post>

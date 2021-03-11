@@ -56,11 +56,11 @@ export const Card = styled.div`
   .content .links .btn {
     position: relative;
     padding: 1rem 2rem;
-    border: .2rem solid var(--darkBackground);
+    border: .1rem solid var(--darkBackground);
     margin: 0 0.5rem;
     display: inline-block;
     text-decoration: none;
-    color: var(--darkBackground);
+    color: #fff;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 600;
@@ -69,7 +69,7 @@ export const Card = styled.div`
     transition: .5s;
   }
   .content .links .btn:hover {
-    color: var(--lightBackground);
+    color: #000;
   }
   .content .links .btn span {
     position: absolute;
