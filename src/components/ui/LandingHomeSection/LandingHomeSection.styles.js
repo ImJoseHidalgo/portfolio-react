@@ -70,19 +70,20 @@ export const Section1 = styled.section`
     }
 
     .name-container {
-      top: 15%;
+      top: 10%;
       left: 10%;
       opacity: 1;
       transition: 0.3s 0.2s;
     }
     .name-container .name {
       font-weight: 600;
-      font-size: 22px;
+      font-size: 3rem;
     }
     .name-container .prof {
-      font-size: 14px;
+      font-size: 1.6rem;
     }
     .portf-container {
+      z-index: 3;
       bottom: 55%;
       left: -70%;
       opacity: 1;
@@ -98,15 +99,14 @@ export const Section1 = styled.section`
       color: var(--textColorDark);
     }
     .portf-container a {
-      font-size: 22px;
+      font-size: 3rem;
       color: var(--textColorDark);
     }
     .portf-container img {
       background: var(--textColorDark);
-      border-radius: 50%;
-      padding: 5px;
-      width: 1.2rem;
-      margin: 0 0 -3px 0;
+      padding: .6rem .4rem;
+      width: 2rem;
+      margin: 0 0 -1px 0;
       transform: rotate(180deg);
     }
   }

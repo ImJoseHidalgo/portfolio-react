@@ -23,12 +23,29 @@ export const Title = styled.div`
     border-bottom: 2px solid rgba(0,0,0,.13);
     margin-bottom: -3rem;
   }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    min-height: 25vh;
+    h1 {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    h3 {
+      font-size: 2rem;
+      width: 100%;
+      margin-bottom: -3rem;
+    }
+  }
 `
 export const PostsContainer = styled.div`
   /* border: 1px solid red; */
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
 `
 export const Post = styled.div`
   background: #fff;
@@ -58,5 +75,11 @@ export const Post = styled.div`
   &:hover {
     transform: translateY(-.3rem);
     border-bottom: 2px solid rgba(0,0,0,.3);
+  }
+
+  @media only screen and (max-width: 600px) {
+    h3 {
+      font-size: 2rem;
+    }
   }
 `

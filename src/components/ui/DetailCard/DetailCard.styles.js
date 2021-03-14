@@ -79,9 +79,47 @@ export const Card = styled.div`
     transform: scaleX(1);
     transform-origin: left;
   }
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 5rem;
+    h3 {
+      font-size: 3rem;
+    }
+    .desc {
+      display: block;
+    }
+    p {
+      font-size: 1.6rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    li {
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+    span {
+      margin: 0 1rem 0 1rem;
+    }
+    a {
+      margin-top: 2rem;
+      margin-right: 1rem;
+      font-size: 1.6rem;
+      padding: .7rem 1rem;
+    }
+  }
 `
 export const Grid = styled.div`
   margin: 4rem 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
+  @media only screen and (max-width: 600px) {
+    margin: 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    ul:first-child {
+      margin-bottom: 2rem;
+    }
+  }
 `

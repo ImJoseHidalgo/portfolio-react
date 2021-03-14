@@ -12,7 +12,7 @@ const DetailCard = ({card}) => {
       <h3>{card.title}</h3>
       <img loading="lazy" src={card.img} alt="giffapp"/>
       <h4>{card.descTitle}</h4>
-      <p>{card.desc}</p>
+      <p className='desc'>{card.desc}</p>
       <Grid>
         <ul>
           <li>{card.liTitle1}</li>

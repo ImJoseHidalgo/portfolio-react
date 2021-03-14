@@ -119,4 +119,20 @@ export const Card = styled.div`
     transition-delay: 0.3s;
     opacity: 1;
   }
+
+  @media only screen and (max-width: 600px) {
+    .content {
+      flex-direction: column;
+    }
+    .content h2 {
+      font-size: 2rem;
+      transform: translateY(0rem);
+    }
+    .content p {
+      display: none;
+    }
+    .content .technologies {
+      display: none;
+    }
+  }
 `

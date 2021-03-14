@@ -58,25 +58,26 @@ export const FooterSection = styled.section`
   }
 
   @media only screen and (max-width: 600px) {
-    height: 70vh;
-    
+    /* height: 70vh; */
+    z-index: 3;
     .container {
-      width: 80%;
+      width: 90%;
       margin: auto;
+      padding: 8rem 0;
       grid-template-columns: 1fr;
     }
     .contact-left h3 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       width: 100%;
     }
     .contact-left {
       margin-bottom: 2rem;
     }
     .contact-right p {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
     .contact-right a {
-      font-size: 13px;
+      font-size: 1.6rem;
     }
   }
 `

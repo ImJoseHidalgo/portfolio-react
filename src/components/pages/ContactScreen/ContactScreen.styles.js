@@ -26,6 +26,18 @@ export const Container = styled.div`
   a:hover {
     color: #000;
   }
+  @media only screen and (max-width: 600px) {
+    min-height: 40vh;
+    width: 90%;
+    padding-top: 5rem;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+  }
 `
 export const ContactForm = styled.form`
   background: #fff;
@@ -58,5 +70,11 @@ export const ContactForm = styled.form`
     margin-top: 3rem;
     /* font-size: 1.3rem; */
     cursor: pointer;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 5rem;
+    input, textarea {
+      font-size: 1.6rem;
+    }
   }
 `

@@ -66,7 +66,8 @@ export const Main = styled.main`
       width: 0%;
     }
     &.active .sect-1 .picture {
-      left: calc(100% - 22rem);
+      /* left: calc(100% - 22rem); */
+      left: 200%;
     }
   }
 `

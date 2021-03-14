@@ -45,13 +45,13 @@ const ContactScreen = () => {
         </Container>
       </ContactTitle>
       <ContactForm onSubmit={handleSubmit}>
-        <div className='container'>
+        <Container className='container'>
           <input placeholder={contact.fname} required type="text" name="to_name"/>
           <input placeholder={contact.femail} required type="email" name="from_name"/>
           <input placeholder={contact.fsubject} required type="text" name="affair"/>
           <textarea placeholder={contact.ftext} required type="text" name="message"/>
           <button type='submit'>{contact.fbutton}</button>
-        </div>
+        </Container>
       </ContactForm>
     </>
   )

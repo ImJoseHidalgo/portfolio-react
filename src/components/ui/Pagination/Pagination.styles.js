@@ -14,6 +14,11 @@ export const ListContainer = styled.div`
     margin-right: 1rem;
     font-weight: 700;
   }
+  @media only screen and (max-width: 600px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
 `
 export const LinkP = styled(Link)`
   font-weight: 600;

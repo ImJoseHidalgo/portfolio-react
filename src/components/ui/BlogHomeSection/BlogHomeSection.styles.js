@@ -17,4 +17,19 @@ export const BlogSection = styled.section`
   .container h2:last-child {
     font-size: 4rem;
   }
+
+  @media only screen and (max-width: 600px) {
+    z-index: 3;
+    .container {
+      width: 90%;
+      padding: 5rem 0 6rem;
+    }
+    .container h2:first-child {
+      font-size: 6rem;
+      margin-bottom: 2rem;
+    }
+    .container h2:last-child {
+      font-size: 3rem;
+    }
+  }
 `

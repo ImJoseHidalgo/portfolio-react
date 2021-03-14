@@ -16,8 +16,8 @@ export const Section3 = styled.section`
   align-items: center;
 
   @media only screen and (max-width: 600px) {
-    background: var(--lightBackground);
-    height: auto;
+    z-index: 3;
+    min-height: 100vh;
   }
 `
 export const Container = styled.div`
@@ -129,10 +129,17 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 600px) {
     width: 90%;
-    padding: 5rem 0;
-    a {
-      font-weight: 600;
-      color: #2c3541;
+    padding: 3rem 0;
+    flex-direction: column;
+    .title {
+      position: relative;
+      height: auto;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+    .previews {
+      width: 100%;
+      margin-left: 0rem;
     }
   }
 `

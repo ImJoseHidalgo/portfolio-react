@@ -87,6 +87,18 @@ export const Section1 = styled.section`
     height: 100%;
     background: #161619;
   }
+
+  @media only screen and (max-width: 600px) {
+    img {
+      width: 28rem;
+      height: 28rem;
+      top: calc(50% - 14rem);
+      left: calc(50% - 14rem);
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
 `
 export const TitleContainer = styled.div`
   max-width: 90rem;
@@ -142,11 +154,37 @@ export const AboutMe = styled.div`
     font-size: 2rem;
     margin: 5rem 0 1rem;
   }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding-bottom: 3rem;
+    &:first-child {
+      padding-top: 3rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      padding-top: 3rem;
+      font-size: 1.6rem;
+    }
+    p:first-child {
+      padding-top: 3rem;
+    }
+    h4 {
+      font-size: 2rem;
+      margin: 3rem 0 1rem;
+    }
+  }
 `
 export const Skills = styled.div`
   /* margin: 5rem 0; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);                     
+  grid-template-columns: repeat(3, 1fr);                  
   ul li {
     font-size: 1.8rem;
     margin: 1rem 0;
@@ -158,6 +196,10 @@ export const Skills = styled.div`
     width: 2rem;
     margin-right: 1rem;
   }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);                  
+  }
 `
 export const Section3 = styled.section`
   min-height: 40vh;
@@ -166,7 +208,7 @@ export const Section3 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  `
+`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -185,6 +227,17 @@ export const Container = styled.div`
     color: #999;
     width: 100%;
     text-align: end;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    padding: 5rem 0;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
   }
 `
 
@@ -260,4 +313,14 @@ export const PortfolioLink = styled.div`
   /* a:hover img {
     transform: scale(1.2);
   } */
+
+  @media only screen and (max-width: 600px) {
+    a {
+      font-size: 2rem;
+    }
+    img {
+      width: 3rem;
+      height: 2rem;
+    }
+  }
 `

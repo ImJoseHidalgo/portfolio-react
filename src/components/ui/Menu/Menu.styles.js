@@ -219,6 +219,7 @@ export const MainContainer = styled.div`
   @media only screen and (max-width: 600px) {
     .header {
       height: 0px;
+      z-index: 5;
     }
     .header.active,
     .header.active::before {
@@ -256,14 +257,22 @@ export const MainContainer = styled.div`
       =============================== */
     .bottom {
       height: 0px;
+      z-index: 5;
     }
     .bottom.active {
       height: 20px;
     }
     .right {
       width: 0px;
+      z-index: 5;
     }
     .right.active {
+      width: 20px;
+    }
+    &.active .left.active {
+      width: 0;
+    }
+    &.active .right.active {
       width: 20px;
     }
     .right .social-container {
@@ -271,6 +280,7 @@ export const MainContainer = styled.div`
     }
     .left {
       width: 0;
+      z-index: 5;
     }
     .left.active {
       width: 0;
@@ -286,6 +296,10 @@ export const MainContainer = styled.div`
     &.active .header.active::before,
     &.active .bottom.active {
       height: 20px;
+    }
+
+    .menu-footer {
+      display: none;
     }
   }
 `
@@ -393,10 +407,10 @@ export const MenuButton = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
-      left: 83.5%;
-      top: 4.3%;
-      width: 3rem;
-      height: 3rem;
+    left: 83.5%;
+    top: 4.3%;
+    width: 3rem;
+    height: 3rem;
     &.active {
       width: 3rem;
       height: 3rem;
@@ -422,11 +436,11 @@ export const MenuButton = styled.div`
     .button:before,
     .button:after {
       height: 0.14rem;
-      top: -0.39rem;
+      top: 1.2rem;
       width: 100%;
     }
     .button:after {
-      top: 0.35rem;
+      top: 0.6rem;
       height: 0.15rem;
     }
     &.active .button:after {
@@ -455,6 +469,11 @@ export const MenuStyles = styled.div`
   &.active {
     left: 0;
   }
+
+  @media only screen and (max-width: 600px) {
+    /* background: red; */
+    z-index: 4;
+  }
 `
 export const MenuBackGround = styled.div`
   position: absolute;
@@ -470,6 +489,11 @@ export const MenuBackGround = styled.div`
   &.active {
     opacity: 1;
     transition: 0.5s 0.1s cubic-bezier(1, 0, 0, 1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* background: red;
+    z-index: 3; */
   }
 `
 export const MenuContainer = styled.div`
@@ -630,36 +654,47 @@ export const MenuContainer = styled.div`
   }
 
   @media only screen and (max-width: 600px) {
-    .menu-container .contact {
+    z-index: 30;
+
+    &.active {
+      /* right: ; */
+      padding-left: 12rem;
+    }
+    .contact {
       justify-content: space-around;
-      width: 50%;
-      margin-left: 20%;
+      width: 100%;
+      margin-left: 0;
     }
-    .menu-container .menu-items {
-      margin-top: 50%;
+    .menu-items {
+      margin-top: 5rem;
     }
-    .menu-container .menu-items li a {
+    .menu-items li {
       font-size: 2rem;
     }
-    .menu-container .contact-desc {
-      margin-top: -8rem;
+    .menu-items li a {
+      font-size: 4rem;
+      line-height: 4rem;
     }
-    .menu-container .contact p {
+    .contact-desc {
+      margin-top: -14rem;
+    }
+    .contact p {
+      width: 70%;
       font-size: 1rem;
       line-height: 1.6rem;
       margin: 0.6rem 0;
     }
-    .menu-container .contact a {
+    .contact a {
       font-size: 1rem;
       font-weight: 600;
     }
-    .menu-container .contact .mobile {
+    .contact .mobile {
       margin-top: 2rem;
     }
-    .menu-container .contact .social-container {
+    .contact .social-container {
       display: flex;
     }
-    .menu-container::after {
+    &:after {
       display: none;
     }
   }

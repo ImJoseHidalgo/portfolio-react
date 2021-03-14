@@ -65,6 +65,15 @@ export const Title = styled.div`
     font-weight: 400;
     color: #666;
   }
+  @media only screen and (max-width: 600px) {
+    min-height: 20vh;
+    img {
+      height: 20vh;
+    }
+    span {
+      font-size: 3rem;
+    }
+  }
 `
 export const Container = styled.section`
   h1 {
@@ -83,8 +92,30 @@ export const Container = styled.section`
   a {
     text-decoration: underline;
   }
+  img {
+    width: 100%;
+  }
+
   ${props => props.container && css`
     max-width: 75rem;
     margin: auto;
   `}
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+    h4 {
+      font-size: 1.6rem;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    p, strong, blockquote, h5 {
+      font-size: 1.6rem;
+    }
+  }
 `

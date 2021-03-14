@@ -46,6 +46,18 @@ export const Section1 = styled.section`
     height: 100%;
     background: #161619;
   }
+
+  @media only screen and (max-width: 600px) {
+    img {
+      width: 28rem;
+      height: 28rem;
+      top: calc(50% - 14rem);
+      left: calc(50% - 14rem);
+    }
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
 `
 export const Section2 = styled.section`
   min-height: 50vh;
@@ -74,9 +86,29 @@ export const Container = styled.div`
   a {
     text-decoration: underline
   }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 2rem;
+    h3 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+    p:first-child {
+      margin-bottom: 2rem;
+    }
+  }
 `
 export const Section3 = styled.section`
   min-height: 100vh;
   background: #fff;
   padding-bottom: 5rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin: auto;
+  }
 `

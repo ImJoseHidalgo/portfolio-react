@@ -122,19 +122,43 @@ export const Section2 = styled.section`
   }
 
   @media only screen and (max-width: 600px) {
+    min-height: 100vh;
     .container {
-      top: 30%;
-      left: 10%;
-      width: 70%;
+      z-index: 3;
+      top: 45%;
+      left: 50%;
+      width: 90%;
+      height: 23rem;
     }
     .container h2 {
       width: 100%;
       margin: 3rem 0;
-      font-size: 1.6rem;
-      font-weight: 600;
+      font-size: 2rem;
     }
-    .container h2 strong {
-      font-weight: 600;
+    /* .container {
+      position: fixed;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      width: 115rem;
+      transform: translate(-50%, -50%);
     }
+    .container h2 {
+      width: 60%;
+      font-size: 2.8rem;
+      font-weight: 700;
+      transition: 0.5s 0s;
+      transform: scaleY(0);
+    }
+    .container h2:nth-child(2) {
+      margin: 2rem 0 4rem;
+    }
+    .container span {
+      position: relative;
+    }
+    .container .bt {
+      transform: scaleY(0);
+      transition: 0.3s;
+    } */
   }
 `
