@@ -217,6 +217,9 @@ export const MainContainer = styled.div`
     height: 10rem;
   }
   @media only screen and (max-width: 600px) {
+    &.active .header {
+      top: 30px;
+    }
     .header {
       height: 0px;
       z-index: 5;
@@ -228,12 +231,19 @@ export const MainContainer = styled.div`
     .header-container .logo {
       position: absolute;
       left: 40px;
-      top: 30px;
-      opacity: 0;
+      top: 10px;
+      opacity: 1;
       transition: 0.8s cubic-bezier(1, 0, 0, 1);
     }
+    .header .header-container .logo {
+      left: 30px;
+      display: none; // Acá dejo de mostrar el name
+    }
+    &.active .header .header-container .logo {
+      display: none;
+    }
     &.active .header-container .logo.active {
-      opacity: 0;
+      opacity: 1;
     }
     .header-container .logo.active {
       opacity: 0;
@@ -683,6 +693,7 @@ export const MenuContainer = styled.div`
       font-size: 1rem;
       line-height: 1.6rem;
       margin: 0.6rem 0;
+      display: none;
     }
     .contact a {
       font-size: 1rem;
@@ -691,8 +702,20 @@ export const MenuContainer = styled.div`
     .contact .mobile {
       margin-top: 2rem;
     }
-    .contact .social-container {
+    .contact .contact-desc .menu-email  {
+      display: none;
+    }
+    .contact .contact-desc .social-container  {
       display: flex;
+    }
+    .contact .contact-desc .social-container .icon a {
+      border-bottom: none;
+    }
+    .contact .contact-desc .social-container .icon {
+      width: 3rem;
+    }
+    .contact .contact-desc .social-container img {
+      width: 25px;
     }
     &:after {
       display: none;

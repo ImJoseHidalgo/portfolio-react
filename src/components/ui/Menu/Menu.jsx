@@ -3,12 +3,13 @@ import { menuActions } from '../../../utils/actions';
 import twitterIcon from "../../../images/icons/twitter.svg";
 import linkedinIcon from "../../../images/icons/linkedin.svg";
 import githubIcon from "../../../images/icons/github.svg";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setEnglish, setEspanish } from '../../../actions/lang';
 import { MainContainer, MenuBackGround, MenuButton, MenuContainer, MenuStyles } from './Menu.styles';
 
 const Menu = () => {
+  const { pathname } = useLocation();
   const dispatch = useDispatch();
   const { footer, menuList, contDesc } = useSelector(state => state.lang.pageContent.menu);
 
@@ -35,7 +36,7 @@ const Menu = () => {
             <div className="logo">
               <Link to='/' id='home-link' >J<span>OSÉ</span>H<span>IDALGO</span></Link>
             </div>
-            <div className="languages">
+            <div className={(pathname.includes('contact') || pathname.includes('blog')) ? "languages activeresp" : "languages"}>
               <button onClick={setLangEnglish} className="lang-icon" >EN</button>
               <button onClick={setLangEspanish} className="lang-icon" >ES</button>
             </div>
@@ -91,13 +92,13 @@ const Menu = () => {
               <p className="mobile">{contDesc.so}</p>
               <div className="social-container">
                 <div className="icon">
-                  <a target="_blank" rel='noreferrer' href="https://twitter.com/imjosehidalgo" ><img src={twitterIcon} alt="Twitter" /></a>
-                </div>
-                <div className="icon">
                   <a target="_blank" rel='noreferrer' href="https://linkedin.com/in/imjosehidalgo" ><img src={linkedinIcon} alt="Linkedin" /></a>
                 </div>
                 <div className="icon">
                   <a target="_blank" rel='noreferrer' href="https://github.com/imjosehidalgo" ><img src={githubIcon} alt="GitHub" /></a>
+                </div>
+                <div className="icon">
+                  <a target="_blank" rel='noreferrer' href="https://twitter.com/imjosehidalgo" ><img src={twitterIcon} alt="Twitter" /></a>
                 </div>
               </div>
             </div>

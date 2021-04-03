@@ -56,6 +56,10 @@ body#en .main-container .languages.active button:nth-child(1),
 body#es .main-container .languages.active button:nth-child(2) {
   color: var(--textColorDark);
 }
+body#en .main-container .languages.activeresp button:nth-child(1),
+body#es .main-container .languages.activeresp button:nth-child(2) {
+  color: var(--textColorDark);
+}
 
 /* SCROLLBAR
       =============================== */
