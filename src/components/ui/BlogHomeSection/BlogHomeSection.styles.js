@@ -22,7 +22,7 @@ export const BlogSection = styled.section`
     z-index: 3;
     .container {
       width: 90%;
-      padding: 5rem 0 6rem;
+      padding: 6rem 0 7rem;
     }
     .container h2:first-child {
       font-size: 6rem;

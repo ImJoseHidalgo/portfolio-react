@@ -76,6 +76,12 @@ body::-webkit-scrollbar-thumb:active {
   background: #1c2531;
 }
 
+::selection {
+  color: #fff;
+  background: #161616;
+  /* background: #0B4970; */
+} 
+
 /* main.css
 =================================== */
 /* .main::after,

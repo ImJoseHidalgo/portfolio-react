@@ -1,3 +1,5 @@
+const query = window.matchMedia('(max-width: 600px)');
+
 export const homeObserver = () => {
   /* LANDING FOCUS
 =============================== */
@@ -95,10 +97,12 @@ const menuOptions = {
 const menuObserver = new IntersectionObserver(function (entries, menuObserver) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      menuButton.classList.add("light-active");
+      {!query.matches && 
+      menuButton.classList.add("light-active");}
       // menuPortfolio.classList.remove("portfolio-focus");
     } else {
-      menuButton.classList.remove("light-active");
+      {!query.matches && 
+      menuButton.classList.remove("light-active");}
       // menuPortfolio.classList.add("portfolio-focus");
     }
   });
@@ -141,6 +145,7 @@ contactOptions);
 contactObserver.observe(contactSection);
 }
 
+
 export const topObserver = () => {
   const main = document.querySelector(".main");
   const mainContainer = document.querySelector(".main-container");
@@ -157,11 +162,13 @@ export const topObserver = () => {
   ) {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
+        {!query.matches && 
         main.classList.add("active");
-        mainContainer.classList.add("active");
+        mainContainer.classList.add("active");}
       } else {
+        {!query.matches && 
         main.classList.remove("active");
-        mainContainer.classList.remove("active");
+        mainContainer.classList.remove("active");}
       }
     });
   },

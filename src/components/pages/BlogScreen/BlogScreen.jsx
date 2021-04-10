@@ -42,8 +42,8 @@ const Blog = () => {
     <>
       <Section1>
         <Title id='top' className='container'>
-          <h1>{title}</h1>
-          <h3>{desc}</h3>
+          {/* <h1>{title}</h1> */}
+          <h3>BLOG</h3>
         </Title>
         <PostsContainer className='container'>
           {currentPosts &&

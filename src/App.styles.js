@@ -59,15 +59,21 @@ export const Main = styled.main`
     &:before {
       width: 80%;
     }
-    &.active::after {
+    &.active:after {
       width: 100%;
     }
-    &.active::before {
-      width: 0%;
+    &.active:before {
+      width: 0;
     }
     &.active .sect-1 .picture {
-      /* left: calc(100% - 22rem); */
-      left: 200%;
+      left: calc(100% - 35rem);
+    }
+    &.active .sect-1 .name-container .name,
+    &.active .sect-1 .name-container .prof,
+    &.active .sect-1 .portf-container .name {
+      opacity: 1;
+      transform: scaleY(1);
+      transition: 0.3s;
     }
   }
 `

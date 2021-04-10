@@ -116,7 +116,7 @@ export const TitleContainer = styled.div`
   p {
     margin: 1rem 0;
     width: 50%;
-    color: #fff;
+    color: #fff;  
     font-size: 3rem;
     font-weight: 500;
     line-height: 4rem;
@@ -162,7 +162,7 @@ export const AboutMe = styled.div`
     gap: 1rem;
     padding-bottom: 3rem;
     &:first-child {
-      padding-top: 3rem;
+      padding-top: 6rem !important;
     }
 
     h1 {

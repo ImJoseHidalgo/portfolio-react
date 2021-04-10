@@ -31,7 +31,9 @@ const PortfolioScreen = () => {
         </Container>
       </Section2>
       <Section3>
-        {cards?.map((card, i) => <DetailCard key={i} card={card} />)}
+        <div>
+          {cards?.map((card, i) => <DetailCard key={i} card={card} />)}
+        </div>
       </Section3>
     </>
   )

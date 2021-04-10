@@ -62,15 +62,22 @@ export const Section1 = styled.section`
   }
 
   @media only screen and (max-width: 600px) {
+    overflow-x: hidden;
     .picture {
-      left: calc(80% - 23rem);
+      /* position: relative; */
+      position: absolute;
+      left: calc(100% - 25rem);
+      /* right: calc(50% - 30rem); */
+      /* background: red; */
     }
     .picture img {
-      width: 500px;
+      width: 50rem;
     }
 
     .name-container {
-      top: 10%;
+      /* position: absolute; */
+      position: relative;
+      top: 7%;
       left: 10%;
       opacity: 1;
       transition: 0.3s 0.2s;
@@ -83,16 +90,17 @@ export const Section1 = styled.section`
       font-size: 1.6rem;
     }
     .portf-container {
+      position: relative;
       z-index: 3;
-      bottom: 55%;
-      left: -70%;
+      bottom: -50%;
+      left: -36%;
       opacity: 1;
       transition: 0.3s 0.2s;
       transform: rotate(-90deg);
     }
     .name-container.active,
     .portf-container.active {
-      opacity: 0;
+      opacity: 1;
       transition: 0.2s;
     }
     .portf-container .name {
@@ -108,6 +116,11 @@ export const Section1 = styled.section`
       width: 2rem;
       margin: 0 0 -1px 0;
       transform: rotate(180deg);
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .portf-container {
+      bottom: -55%;
     }
   }
 `

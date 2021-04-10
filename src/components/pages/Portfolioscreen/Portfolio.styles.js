@@ -91,6 +91,7 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
     width: 90%;
     gap: 2rem;
+    padding: 6rem 0;
     h3 {
       font-size: 3rem;
     }

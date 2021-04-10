@@ -122,18 +122,33 @@ export const Section2 = styled.section`
   }
 
   @media only screen and (max-width: 600px) {
-    min-height: 100vh;
+    height: 50vh;
+    position: relative;
+    background: #fff;
     .container {
+      position: absolute;
       z-index: 3;
-      top: 45%;
-      left: 50%;
       width: 90%;
-      height: 23rem;
+      top: 45%;
+      margin: 0 !important;
+      /* height: 23rem; */
     }
+    /* .container {
+      position: fixed;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      width: 115rem;
+      transform: translate(-50%, -50%);
+    } */
     .container h2 {
       width: 100%;
       margin: 3rem 0;
       font-size: 2rem;
+      transform: scaleY(1);
+    }
+    .container .bt {
+      transform: scaleY(1);
     }
     /* .container {
       position: fixed;

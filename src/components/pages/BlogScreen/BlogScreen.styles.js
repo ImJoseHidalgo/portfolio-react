@@ -18,10 +18,15 @@ export const Title = styled.div`
   }
   h3 {
     width: 100%;
-    font-weight: 500;
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9rem;
     padding-bottom: 3rem;
-    border-bottom: 2px solid rgba(0,0,0,.13);
     margin-bottom: -3rem;
+    border-bottom: 2px solid rgba(0,0,0,.13);
+    -webkit-text-stroke-width: 0.5rem;
+    letter-spacing: .5rem;
   }
   @media only screen and (max-width: 600px) {
     width: 90%;
@@ -34,6 +39,11 @@ export const Title = styled.div`
       font-size: 2rem;
       width: 100%;
       margin-bottom: -3rem;
+    }
+    h3 {
+      font-size: 6rem;
+      -webkit-text-stroke-width: 0.25rem;
+      letter-spacing: .05rem;
     }
   }
 `
