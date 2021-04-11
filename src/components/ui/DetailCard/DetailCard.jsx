@@ -3,6 +3,7 @@ import { Card, Grid } from "./DetailCard.styles";
 
 const DetailCard = ({card}) => {
 
+  const query = window.matchMedia('(max-width: 600px)');
   const createMarkup = () => {
     return {__html: `${card.techP}`};
   }
@@ -10,7 +11,10 @@ const DetailCard = ({card}) => {
   return (
     <Card className="container">
       <h3>{card.title}</h3>
-      <img loading="lazy" src={card.img} alt="giffapp"/>
+      {query.matches 
+        ? <img loading="lazy" src={card.imgMobile} alt={card.title}/>
+        : <img loading="lazy" src={card.img} alt={card.title}/>
+      }
       <h4>{card.descTitle}</h4>
       <p className='desc'>{card.desc}</p>
       <Grid>

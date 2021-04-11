@@ -25,8 +25,9 @@ export const Title = styled.div`
     padding-bottom: 3rem;
     margin-bottom: -3rem;
     border-bottom: 2px solid rgba(0,0,0,.13);
-    -webkit-text-stroke-width: 0.5rem;
-    letter-spacing: .5rem;
+    -webkit-text-stroke-width: 0.3rem;
+    color: #161616;
+    /* letter-spacing: .5rem; */
   }
   @media only screen and (max-width: 600px) {
     width: 90%;

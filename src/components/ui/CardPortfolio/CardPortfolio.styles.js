@@ -57,7 +57,7 @@ export const Card = styled.div`
     position: relative;
     padding: 1rem 2rem;
     border: .1rem solid var(--darkBackground);
-    margin: 0 0.5rem;
+    margin: 3rem 0.5rem 0;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -133,6 +133,9 @@ export const Card = styled.div`
     }
     .content .technologies {
       display: none;
+    }
+    .content .links .btn {
+      margin: 0 0.5rem;
     }
   }
 `

@@ -1,29 +1,26 @@
 import React from 'react';
-import demo6 from '../../../images/6.jpg';
 import cssIcon from "../../../images/icons/css.svg";
 import { Card } from './CardPortfolio.styles';
 
-const CardPortfolio = () => {
+const CardPortfolio = ({ imgPrev, imgMobilePrev, title, desc, demo, repo }) => {
+
   return (
     <Card>
-      <img loading="lazy" src={demo6} alt="a" />
+      <img loading="lazy" src={imgMobilePrev} alt={title} />
       <div className="content">
         <div>
-          <h2>Proyect Title</h2>
-          <p>
-            Proyect description, Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Laudantium animi illo maxime eum fugit hic
-          </p>
-          <div className="technologies">
-            <p>Tecnologias usadas:</p>
+          <h2>{title}</h2>
+          <p>{desc}</p>
+          {/* <div className="technologies">
+            <p>{used}:</p>
             <img loading="lazy" src={cssIcon} alt="Javascript" title="CSS" />
             <img loading="lazy" src={cssIcon} alt="Javascript" title="HTML" />
             <img loading="lazy" src={cssIcon} alt="Javascript" title="JavaScript" />
             <img loading="lazy" src={cssIcon} alt="Javascript" title="API" />
-          </div>
+          </div> */}
           <div className="links">
-            <a href="https://github.com/imjosehidalgo" className="btn">Repo</a>
-            <a href="https://github.com/imjosehidalgo" className="btn">Live</a>
+            <a target='_blank' href={repo} className="btn">Repo</a>
+            <a target='_blank' href={demo} className="btn">Live</a>
           </div>
         </div>
       </div>

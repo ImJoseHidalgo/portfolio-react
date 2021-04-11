@@ -7,6 +7,9 @@ import { Container, Section3 } from './PortfolioHomeSection.styles';
 const PortfolioSection = () => {
   const { pageContent } = useSelector(state => state.lang)
   const { desc, butt } = useSelector(state => state.lang.pageContent.homePort);
+  const { cards } = useSelector(state => state.lang.pageContent.portfolio);
+
+  const previewCards = cards && cards.slice(0, 3);
 
   return (
     <>
@@ -24,147 +27,17 @@ const PortfolioSection = () => {
             </Link>
           </div>
           <div className="previews">
-            <CardPortfolio />
-            <CardPortfolio />
-            <CardPortfolio />
-            {/* <div className="card">
-              <img src={demo10} alt="a" />
-              <div className="content">
-                <div>
-                  <h2>Proyect Title</h2>
-                  <p>
-                    Proyect description, Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Laudantium animi illo maxime eum fugit hic
-                  </p>
-                  <div className="technologies">
-                    <p>Tecnologias usadas:</p>
-                    <img src={cssIcon} alt="Javascript" title="CSS" />
-                    <img src={cssIcon} alt="Javascript" title="HTML" />
-                    <img src={cssIcon} alt="Javascript" title="JavaScript" />
-                    <img src={cssIcon} alt="Javascript" title="API" />
-                  </div>
-                  <div className="links">
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Repo</a>
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Live</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-            <img src={demo6} alt="a" />
-              <div className="content">
-                <div>
-                  <h2>Proyect Title</h2>
-                  <p>
-                    Proyect description, Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Laudantium animi illo maxime eum fugit hic
-                  </p>
-                  <div className="technologies">
-                    <p>Tecnologias usadas:</p>
-                    <img src={cssIcon} alt="Javascript" title="CSS" />
-                    <img src={cssIcon} alt="Javascript" title="HTML" />
-                    <img src={cssIcon} alt="Javascript" title="JavaScript" />
-                    <img src={cssIcon} alt="Javascript" title="API" />
-                  </div>
-                  <div className="links">
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Repo</a>
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Live</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <img src={demo10} alt="a" />
-              <div className="content">
-                <div>
-                  <h2>Proyect Title</h2>
-                  <p>
-                    Proyect description, Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Laudantium animi illo maxime eum fugit hic
-                  </p>
-                  <div className="technologies">
-                    <p>Tecnologias usadas:</p>
-                    <img src={cssIcon} alt="Javascript" title="CSS" />
-                    <img src={cssIcon} alt="Javascript" title="HTML" />
-                    <img src={cssIcon} alt="Javascript" title="JavaScript" />
-                    <img src={cssIcon} alt="Javascript" title="API" />
-                  </div>
-                  <div className="links">
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Repo</a>
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Live</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <img src={demo6} alt="a" />
-              <div className="content">
-                <div>
-                  <h2>Proyect Title</h2>
-                  <p>
-                    Proyect description, Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Laudantium animi illo maxime eum fugit hic
-                  </p>
-                  <div className="technologies">
-                    <p>Tecnologias usadas:</p>
-                    <img src={cssIcon} alt="Javascript" title="CSS" />
-                    <img src={cssIcon} alt="Javascript" title="HTML" />
-                    <img src={cssIcon} alt="Javascript" title="JavaScript" />
-                    <img src={cssIcon} alt="Javascript" title="API" />
-                  </div>
-                  <div className="links">
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Repo</a>
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Live</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <img src={demo10} alt="a" />
-              <div className="content">
-                <div>
-                  <h2>Proyect Title</h2>
-                  <p>
-                    Proyect description, Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Laudantium animi illo maxime eum fugit hic
-                  </p>
-                  <div className="technologies">
-                    <p>Tecnologias usadas:</p>
-                    <img src={cssIcon} alt="Javascript" title="CSS" />
-                    <img src={cssIcon} alt="Javascript" title="HTML" />
-                    <img src={cssIcon} alt="Javascript" title="JavaScript" />
-                    <img src={cssIcon} alt="Javascript" title="API" />
-                  </div>
-                  <div className="links">
-                    <a href="https://github.com/imjosehidalgo/des1" className="btn"><span></span>Repo</a>
-                    <a href="https://des1.vercel.app/" className="btn"><span></span>Live</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <img src={demo6} alt="a" />
-              <div className="content">
-                <div>
-                  <h2>Proyect Title</h2>
-                  <p>
-                    Proyect description, Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Laudantium animi illo maxime eum fugit hic
-                  </p>
-                  <div className="technologies">
-                    <p>Tecnologias usadas:</p>
-                    <img src={cssIcon} alt="Javascript" title="CSS" />
-                    <img src={cssIcon} alt="Javascript" title="HTML" />
-                    <img src={cssIcon} alt="Javascript" title="JavaScript" />
-                    <img src={cssIcon} alt="Javascript" title="API" />
-                  </div>
-                  <div className="links">
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Repo</a>
-                    <a href="https://github.com/imjosehidalgo" className="btn"><span></span>Live</a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            {previewCards.map((card, i) => 
+              <CardPortfolio 
+                key={i}
+                imgPrev={card.img}
+                imgMobilePrev={card.imgMobile}
+                title={card.title}
+                desc={card.desc}
+                demo={card.linkDemo}
+                repo={card.linkRepo}
+              />
+            )}
           </div>
         </Container>
       </Section3> 

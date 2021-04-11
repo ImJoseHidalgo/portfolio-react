@@ -4,24 +4,33 @@ import DetailCard from '../../ui/DetailCard/DetailCard';
 import { Container, Section1, Section2, Section3 } from './Portfolio.styles'
 import circle from '../../../images/circle.png';
 import { useSelector } from 'react-redux';
+import { Link, useHistory } from 'react-router-dom';
 
 const PortfolioScreen = () => {
+  const history = useHistory();
   const { t1, t2, ap1, ap2, cards } = useSelector(state => state.lang.pageContent.portfolio);
 
-  window.scrollTo(0, 0);
   useEffect(() => {
+    window.scrollTo(0, 0);
     topObserver();
     document.title = 'Portfolio | José Hidalgo';
   }, []);
+
+  const move = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <>
       <Section1 id='top'>
         <h1>{t1}</h1>
         <img src={circle} alt="circle"/>
-        <img src="https://icongr.am/entypo/chevron-small-down.svg?size=128&color=000000" alt="arrow"/>
+        <img onClick={move} src="https://icongr.am/entypo/chevron-small-down.svg?size=128&color=000000" alt="arrow"/>
       </Section1>
-      <Section2>
+      <Section2 id="sectTwo">
         <Container className='container'>
           <h3>{t2}</h3>
           <div>
