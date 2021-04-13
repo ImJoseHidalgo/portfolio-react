@@ -2,7 +2,6 @@ import React from 'react'
 import { Button } from './ButtonAnim.styles';
 
 const ButtonAnim = ( {text, path, props } ) => {
-  console.log(text, path);
 
   return (
     <Button to={path}>

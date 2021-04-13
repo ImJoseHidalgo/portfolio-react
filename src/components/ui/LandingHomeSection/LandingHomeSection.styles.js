@@ -61,6 +61,16 @@ export const Section1 = styled.section`
     width: 2rem;
   }
 
+  @media only screen and (max-width: 1440px) {
+    overflow-x: hidden;
+    .picture {
+      right: calc(50% - 25rem);
+    }
+    .picture img {
+      width: 50rem;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     overflow-x: hidden;
     .picture {

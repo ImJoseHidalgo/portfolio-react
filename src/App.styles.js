@@ -54,6 +54,12 @@ export const Main = styled.main`
     transition: transform 0.3s 0.6s;
   }
 
+  @media only screen and (max-width: 1440px) {
+    &.active .sect-1 .picture {
+      right: calc(23% - 25rem);
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     &:after,
     &:before {
