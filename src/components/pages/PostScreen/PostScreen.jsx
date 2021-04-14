@@ -25,11 +25,11 @@ const PostScreen = () => {
     year: 'numeric',
     timeZone: 'UTC',
   };
-
-  window.scrollTo(0, 0);
+  
   useEffect(() => {
+    window.scrollTo(0, 0);
     topObserver();
-    document.title = `${slug.charAt(0).toUpperCase() + slug.slice(1)} | José Hidalgo`;
+    document.title = `${(slug.charAt(0).toUpperCase() + slug.slice(1)).replaceAll('-', ' ')} | José Hidalgo`;
     {posts.length === 0 && dispatch(startLoadingPosts())}
   }, [])
 

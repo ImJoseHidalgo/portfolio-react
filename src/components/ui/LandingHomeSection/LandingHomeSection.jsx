@@ -1,7 +1,7 @@
 import React from 'react'
 import proximoIcon from '../../../images/proximo.svg';
-import joseDesk from '../../../images/JoseDesktop.png';
-import joseResp from '../../../images/JoseResponsive.png';
+// import joseDesk from '../../../images/JoseDesktop.png';
+// import joseResp from '../../../images/JoseResponsive.png';
 import { useSelector } from 'react-redux';
 import { Section1 } from './LandingHomeSection.styles';
 import { Link } from 'react-router-dom';
@@ -18,12 +18,12 @@ const LandingHomeSection = () => {
         {/* <div className="picture"> */}
         <picture className="picture">
           <source media="(min-width: 600px)"
-                  srcset={joseDesk} />
+                  srcSet='https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618285497/JoseDesktop_cpph7s.png' />
           <source media="(min-width: 300px) and (max-width: 600px)"
-                  srcset={joseResp} />
+                  srcSet='https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618285497/JoseResponsive_bzqrme.png' />
           {/* <source media="(max-width: 50px)"
                   srcset={joseResp} /> */}
-          <img src={joseDesk} alt="Jose Hidalgo" />
+          <img src='https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618285497/JoseDesktop_cpph7s.png' alt="Jose Hidalgo" />
         </picture>
                     {/* <img src={joseImg} alt="profile" /> */}
                     {/* <!-- <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=409x2048:format=png/path/s2327599727345734/image/i20244355d30a7038/version/1549961940/image.png" alt="" /> -->

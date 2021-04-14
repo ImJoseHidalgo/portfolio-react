@@ -14,6 +14,11 @@ export const Card = styled.div`
   img {
     width: 100%;
     position: relative;
+    /* border-radius: 8px;
+    border-top: 15px solid #282C34;
+    border-right: 3px solid #282C34;
+    border-bottom: 6px solid #282C34;
+    border-left: 3px solid #282C34; */
   }
   .content {
     position: absolute;
@@ -123,7 +128,15 @@ export const Card = styled.div`
   @media only screen and (max-width: 600px) {
     .content {
       flex-direction: column;
+      /* border-radius: 8px 8px 5px 5px;
+      border-top: 15px solid #282C34;
+      border-right: 3px solid #282C34;
+      border-bottom: 6px solid #282C34;
+      border-left: 3px solid #282C34; */
     }
+    /* img {
+      border-radius: 8px 8px 5px 5px;
+    } */
     .content h2 {
       font-size: 2rem;
       transform: translateY(0rem);

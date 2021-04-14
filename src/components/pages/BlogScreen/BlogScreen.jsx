@@ -17,7 +17,7 @@ function urlFor(source) {
 const Blog = () => {
   const dispatch = useDispatch();
   const { posts } = useSelector(state => state.posts);
-  const { title, desc, read } = useSelector(state => state.lang.pageContent.blog);
+  const { read } = useSelector(state => state.lang.pageContent.blog);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);

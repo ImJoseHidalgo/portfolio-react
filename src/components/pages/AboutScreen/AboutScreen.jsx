@@ -4,7 +4,7 @@ import { AboutMe, Container, PortfolioLink, Section1, Section2, Section3, Skills
 import firebaseIcon from '../../../images/icons/firebase.svg';
 import ad from '../../../images/icons/adobe1.svg';
 import ad1 from '../../../images/icons/adobe.svg';
-import boot from '../../../images/icons/bootstrap.svg';
+// import boot from '../../../images/icons/bootstrap.svg';
 import css from '../../../images/icons/css.svg';
 import gith from '../../../images/icons/github.svg';
 import html from '../../../images/icons/html-5.svg';

@@ -4,10 +4,8 @@ import DetailCard from '../../ui/DetailCard/DetailCard';
 import { Container, Section1, Section2, Section3 } from './Portfolio.styles'
 import circle from '../../../images/circle.png';
 import { useSelector } from 'react-redux';
-import { Link, useHistory } from 'react-router-dom';
 
 const PortfolioScreen = () => {
-  const history = useHistory();
   const { t1, t2, ap1, ap2, cards } = useSelector(state => state.lang.pageContent.portfolio);
 
   useEffect(() => {

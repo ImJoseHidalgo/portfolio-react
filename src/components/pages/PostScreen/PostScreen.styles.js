@@ -81,16 +81,38 @@ export const Container = styled.section`
     font-weight: 400;
     margin-bottom: 4rem;
   }
-  h4 {
-    background: #000;
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 6rem;
+  }
+  h3 {
+    background: #282C34;
+    border-radius: 5px;
     font-weight: 600;
     color: #fff;
     font-size: 2rem;
     padding: 1rem 2rem;
     margin: 2rem 0;
   }
+  h4 {
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: 400;
+    background: #282C34;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-family: monospace;
+  }
   a {
     text-decoration: underline;
+  }
+  strong {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: lowercase;
   }
   img {
     width: 100%;
@@ -107,12 +129,15 @@ export const Container = styled.section`
       font-size: 3rem;
       margin-bottom: 3rem;
     }
+    h2 {
+      font-size: 2.4rem;
+    }
     h4 {
       font-size: 1.6rem;
     }
     h3 {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
     p, strong, blockquote, h5 {
       font-size: 1.6rem;

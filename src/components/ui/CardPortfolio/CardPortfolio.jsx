@@ -1,5 +1,5 @@
 import React from 'react';
-import cssIcon from "../../../images/icons/css.svg";
+// import cssIcon from "../../../images/icons/css.svg";
 import { Card } from './CardPortfolio.styles';
 
 const CardPortfolio = ({ imgPrev, imgMobilePrev, title, desc, demo, repo }) => {
@@ -19,8 +19,8 @@ const CardPortfolio = ({ imgPrev, imgMobilePrev, title, desc, demo, repo }) => {
             <img loading="lazy" src={cssIcon} alt="Javascript" title="API" />
           </div> */}
           <div className="links">
-            <a target='_blank' href={repo} className="btn">Repo</a>
-            <a target='_blank' href={demo} className="btn">Live</a>
+            <a rel="noreferrer" target='_blank' href={repo} className="btn">Repo</a>
+            <a rel="noreferrer" target='_blank' href={demo} className="btn">Live</a>
           </div>
         </div>
       </div>
