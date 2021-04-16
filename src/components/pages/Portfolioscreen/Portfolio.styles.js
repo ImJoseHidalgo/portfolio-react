@@ -77,7 +77,7 @@ export const Container = styled.div`
   }
   p {
     /* font-weight: 500; */
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 3rem;
   }
   p:first-child {

@@ -46,18 +46,6 @@ const About = () => {
 
   return (
     <>
-      {/* <Section1 id='top'>
-        <img src={wonam} alt="perfil"/>
-          <div>
-            <div className="container">
-            <TitleContainer>
-              <h2>{about.h1}</h2>
-              <h2>{about.h2}</h2>
-              <p>{about.p1}</p>
-            </TitleContainer>
-          </div>
-        </div>
-      </Section1> */}
       <Section1 id='top'>
         <h1>{about.abh1}</h1>
         <img src={circle} alt="circle"/>
@@ -72,7 +60,6 @@ const About = () => {
               <p>{about.abp1}</p>
               <p>{about.abp2}</p>
               <p>{about.abp3}</p>
-              {/* <p>{about.abp4}</p> */}
             </div>
           </AboutMe>
           <AboutMe>
@@ -120,10 +107,6 @@ const About = () => {
       </Section2>
       <PortfolioLink>
         <ButtonAnim text={about.bt} path='/portfolio' />
-        {/* <Link to='/portfolio'>
-          {about.bt}
-          <img src="https://icongr.am/entypo/chevron-small-right.svg?size=128&color=ffffff" alt="arrow"/>
-        </Link> */}
       </PortfolioLink>
       <Section3>
         <Container className="container">
