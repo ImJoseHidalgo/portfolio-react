@@ -60,14 +60,14 @@ export const Section1 = styled.section`
   .portf-container img {
     width: 2rem;
   }
-  @media only screen and (min-width: 1441px) {
+  /* @media only screen and (min-width: 1441px) {
     .picture {
       right: calc(50% - 35rem);
     }
     .picture img {
       width: 70rem;
     }
-  }
+  } */
   @media only screen and (max-width: 1440px) {
     overflow-x: hidden;
     .picture {

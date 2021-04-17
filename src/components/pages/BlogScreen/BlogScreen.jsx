@@ -30,6 +30,7 @@ const Blog = () => {
     {posts.length === 0 && dispatch(startLoadingPosts())}
   }, []);
   
+  // PAGINADO
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts?.slice(indexOfFirstPost, indexOfLastPost);
