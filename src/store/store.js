@@ -3,7 +3,8 @@ import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import { langReducer } from '../reducers/langReducer';
 import { postsReducer } from '../reducers/postsReducer';
 
-const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
+// const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
+const composeEnhancers = compose;
 
 const reducers = combineReducers({
   lang: langReducer,

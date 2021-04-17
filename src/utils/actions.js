@@ -27,10 +27,4 @@ export const menuActions = () => {
   clickMenu(".menu-portfolio");
   clickMenu(".menu-about");
   clickMenu(".menu-contact");
-  
-  // document.querySelector(".sect-1")?.addEventListener("click", () => {
-  //   document.documentElement.classList.toggle("color");
-  // });
-  
-  
 }

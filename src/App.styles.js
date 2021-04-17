@@ -53,7 +53,11 @@ export const Main = styled.main`
     transform: scaleY(1);
     transition: transform 0.3s 0.6s;
   }
-
+  @media only screen and (min-width: 1441px) {
+    &.active .sect-1 .picture {
+      right: calc(23% - 35rem);
+    }
+  }
   @media only screen and (max-width: 1440px) {
     &.active .sect-1 .picture {
       right: calc(23% - 25rem);
