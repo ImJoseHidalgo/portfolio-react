@@ -92,7 +92,7 @@ export const english = {
         butDemo: 'Launch App',
         butRepo: 'Source Code',
         linkDemo: 'https://josee.link/',
-        linkRepo: 'https://github.com/ImJoseHidalgo/',
+        linkRepo: 'https://github.com/ImJoseHidalgo/url-shortener/',
       },
       {
         title: 'Personal Portfolio',
@@ -295,7 +295,7 @@ export const spanish = {
         butDemo: 'Ejecutar aplicación',
         butRepo: 'Código fuente',
         linkDemo: 'https://josee.link/',
-        linkRepo: 'https://github.com/ImJoseHidalgo',
+        linkRepo: 'https://github.com/ImJoseHidalgo/url-shortener',
       },
       {
         title: 'Portafolio Personal',

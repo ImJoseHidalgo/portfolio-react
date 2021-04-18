@@ -19,8 +19,8 @@ const CardPortfolio = ({ imgPrev, imgMobilePrev, title, desc, demo, repo }) => {
             <img loading="lazy" src={cssIcon} alt="Javascript" title="API" />
           </div> */}
           <div className="links">
-            <a rel="noreferrer" target='_blank' href={repo} className="btn">Repo</a>
             <a rel="noreferrer" target='_blank' href={demo} className="btn">Live</a>
+            <a rel="noreferrer" target='_blank' href={repo} className="btn">Repo</a>
           </div>
         </div>
       </div>
