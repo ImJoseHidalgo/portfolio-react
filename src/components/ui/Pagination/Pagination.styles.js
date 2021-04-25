@@ -14,7 +14,7 @@ export const ListContainer = styled.div`
     margin-right: 1rem;
     font-weight: 700;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     h3 {
       font-size: 2rem;
     }

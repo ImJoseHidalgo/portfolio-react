@@ -29,7 +29,7 @@ export const Title = styled.div`
     color: #161616;
     /* letter-spacing: .5rem; */
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 90%;
     min-height: 25vh;
     h1 {
@@ -53,7 +53,7 @@ export const PostsContainer = styled.div`
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 90%;
     grid-template-columns: 1fr;
   }
@@ -88,7 +88,7 @@ export const Post = styled.div`
     border-bottom: 2px solid rgba(0,0,0,.3);
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     h3 {
       font-size: 2rem;
     }

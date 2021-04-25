@@ -57,7 +57,7 @@ export const FooterSection = styled.section`
     padding: 1rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     /* height: 70vh; */
     z-index: 3;
     .container {

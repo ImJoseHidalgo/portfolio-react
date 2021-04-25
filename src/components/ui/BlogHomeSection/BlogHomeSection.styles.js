@@ -18,7 +18,7 @@ export const BlogSection = styled.section`
     font-size: 4rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     z-index: 3;
     .container {
       width: 90%;

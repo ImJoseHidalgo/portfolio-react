@@ -506,7 +506,7 @@ main .sect-4 .icon-footer img {
 
 /* RESPONSIVE
     =============================== */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   /* .main::after,
   .main:before {
     width: 80%;
@@ -838,7 +838,7 @@ main .sect-4 .icon-footer img {
       height: 10rem;
     } */
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       /* HEADER
         =============================== */
       /* .header {
@@ -1191,7 +1191,7 @@ body.active {
   color: var(--textColorDark);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .main-container .menu-button {
     left: 83.5%;
     top: 4.3%;
@@ -1355,7 +1355,7 @@ body.active {
   z-index: 10;
   pointer-events: none;
 }
-/* @media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 768px) {
   .scrollTop {
     bottom: 130px;
     width: 40px;

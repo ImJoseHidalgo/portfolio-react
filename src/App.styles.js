@@ -60,11 +60,11 @@ export const Main = styled.main`
   } */
   @media only screen and (max-width: 1440px) {
     &.active .sect-1 .picture {
-      right: calc(23% - 25rem);
+      right: calc(23% - 23rem);
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     &:after,
     &:before {
       width: 80%;
@@ -76,7 +76,7 @@ export const Main = styled.main`
       width: 0;
     }
     &.active .sect-1 .picture {
-      left: calc(100% - 35rem);
+      left: calc(100% - 30.5rem);
     }
     &.active .sect-1 .name-container .name,
     &.active .sect-1 .name-container .prof,

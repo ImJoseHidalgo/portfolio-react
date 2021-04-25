@@ -125,7 +125,7 @@ export const Card = styled.div`
     opacity: 1;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .content {
       flex-direction: column;
       /* border-radius: 8px 8px 5px 5px;

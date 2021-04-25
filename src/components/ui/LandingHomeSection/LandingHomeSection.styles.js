@@ -14,6 +14,7 @@ export const Section1 = styled.section`
     justify-content: center;
     align-items: flex-end;
     transition: 1s;
+    user-select: none;
   }
   .picture img {
     width: 60rem;
@@ -71,24 +72,25 @@ export const Section1 = styled.section`
   @media only screen and (max-width: 1440px) {
     overflow-x: hidden;
     .picture {
-      right: calc(50% - 25rem);
+      right: calc(50% - 22.5rem);
+      /* left: calc(100% - 56rem); */
     }
     .picture img {
-      width: 50rem;
+      width: 45rem;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     overflow-x: hidden;
     .picture {
       /* position: relative; */
       position: absolute;
-      left: calc(100% - 25rem);
+      left: calc(100% - 20rem);
       /* right: calc(50% - 30rem); */
       /* background: red; */
     }
     .picture img {
-      width: 50rem;
+      width: 43rem;
     }
 
     .name-container {

@@ -1,4 +1,4 @@
-const query = window.matchMedia('(max-width: 600px)');
+const query = window.matchMedia('(max-width: 768px)');
 
 export const homeObserver = () => {
 

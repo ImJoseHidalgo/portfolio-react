@@ -20,7 +20,7 @@ export const Section2 = styled.section`
   .container h2 {
     width: 60%;
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 600;
     transition: 0.5s 0s;
     transform: scaleY(0);
   }
@@ -121,7 +121,7 @@ export const Section2 = styled.section`
     filter: invert(1);
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     height: 50vh;
     position: relative;
     background: #fff;

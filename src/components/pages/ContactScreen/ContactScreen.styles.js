@@ -26,7 +26,7 @@ export const Container = styled.div`
   a:hover {
     color: #000;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     min-height: 40vh;
     width: 90%;
     padding-top: 5rem;
@@ -71,7 +71,7 @@ export const ContactForm = styled.form`
     /* font-size: 1.3rem; */
     cursor: pointer;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     padding-bottom: 5rem;
     input, textarea {
       font-size: 1.6rem;

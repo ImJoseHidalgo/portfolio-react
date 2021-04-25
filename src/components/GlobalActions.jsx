@@ -4,7 +4,7 @@ import ScrollToTop from './ui/ScrollToTop/ScrollToTop';
 import Cursor from './ui/Cursor/Cursor';
 
 const GlobalActions = () => {
-  const query = window.matchMedia('(max-width: 600px)');
+  const query = window.matchMedia('(max-width: 768px)');
   // query.addEventListener('change', (change) => {
   //   if (change.matches) {
   //     console.log('You are using a mobile device');

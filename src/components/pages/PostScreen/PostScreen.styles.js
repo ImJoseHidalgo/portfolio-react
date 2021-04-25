@@ -65,7 +65,7 @@ export const Title = styled.div`
     font-weight: 400;
     color: #666;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     min-height: 20vh;
     img {
       height: 20vh;
@@ -123,7 +123,7 @@ export const Container = styled.section`
     margin: auto;
   `}
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 90%;
     h1 {
       font-size: 3rem;

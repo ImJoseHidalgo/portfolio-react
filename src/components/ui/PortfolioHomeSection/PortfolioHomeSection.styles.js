@@ -15,7 +15,7 @@ export const Section3 = styled.section`
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     z-index: 3;
     min-height: 100vh;
   }
@@ -127,7 +127,7 @@ export const Container = styled.div`
     margin-left: 5rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 90%;
     padding: 6rem 0;
     flex-direction: column;

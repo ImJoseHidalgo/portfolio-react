@@ -47,7 +47,7 @@ export const Section1 = styled.section`
     background: #161619;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     img {
       width: 28rem;
       height: 28rem;
@@ -87,7 +87,7 @@ export const Container = styled.div`
     text-decoration: underline
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     width: 90%;
     gap: 2rem;
@@ -108,7 +108,7 @@ export const Section3 = styled.section`
   background: #fff;
   padding-bottom: 5rem;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 90%;
     margin: auto;
   }

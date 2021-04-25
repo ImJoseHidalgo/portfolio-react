@@ -216,7 +216,7 @@ export const MainContainer = styled.div`
   &.active .bottom.active {
     height: 10rem;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     &.active .header {
       top: 30px;
     }
@@ -416,7 +416,7 @@ export const MenuButton = styled.div`
     color: var(--textColorDark);
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     left: 83.5%;
     top: 4.3%;
     width: 3rem;
@@ -480,7 +480,7 @@ export const MenuStyles = styled.div`
     left: 0;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     /* background: red; */
     z-index: 4;
   }
@@ -501,7 +501,7 @@ export const MenuBackGround = styled.div`
     transition: 0.5s 0.1s cubic-bezier(1, 0, 0, 1);
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     /* background: red;
     z-index: 3; */
   }
@@ -663,7 +663,7 @@ export const MenuContainer = styled.div`
     transition: 0.8s cubic-bezier(1, 0, 0, 1);
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     z-index: 30;
 
     &.active {

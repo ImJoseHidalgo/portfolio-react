@@ -88,7 +88,7 @@ export const Section1 = styled.section`
     background: #161619;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     img {
       width: 28rem;
       height: 28rem;
@@ -155,7 +155,7 @@ export const AboutMe = styled.div`
     margin: 5rem 0 1rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
@@ -197,7 +197,7 @@ export const Skills = styled.div`
     margin-right: 1rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);                  
   }
 `
@@ -229,7 +229,7 @@ export const Container = styled.div`
     text-align: end;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     width: 90%;
     padding: 5rem 0;
     h3 {
@@ -314,7 +314,7 @@ export const PortfolioLink = styled.div`
     transform: scale(1.2);
   } */
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     a {
       font-size: 2rem;
     }

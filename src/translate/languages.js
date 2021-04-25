@@ -96,8 +96,8 @@ export const english = {
       },
       {
         title: 'Personal Portfolio',
-        img: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618346516/localhost_3000__nqckoh.jpg',
-        imgMobile: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618346519/localhost_3000__1_qgqyio.jpg',
+        img: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1619304889/localhost_3000__1_1_tyvdni.png',
+        imgMobile: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1619304892/mibilecss_1_sackku.png',
         descTitle: 'Project descriptión.',
         desc: "Originally my portfolio was created with HTML, CSS and JavaScript Vanilla. This is the second version of my portfolio built in React and Using Sanity.io to store the blog content.",
         liTitle1: 'Platform',
@@ -299,8 +299,8 @@ export const spanish = {
       },
       {
         title: 'Portafolio Personal',
-        img: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618346516/localhost_3000__nqckoh.jpg',
-        imgMobile: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1618346519/localhost_3000__1_qgqyio.jpg',
+        img: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1619304889/localhost_3000__1_1_tyvdni.png',
+        imgMobile: 'https://res.cloudinary.com/dwqr4s7gp/image/upload/v1619304892/mibilecss_1_sackku.png',
         descTitle: 'Descripción del proyecto.',
         desc: "Originalmente mi portafolio fue creado con HTML, CSS y JavaScript Vanilla. Esta es la segunda versión de mi portafolio construida en React y Usando Sanity.io para almacenar el contenido del Blog.",
         liTitle1: 'Plataforma',

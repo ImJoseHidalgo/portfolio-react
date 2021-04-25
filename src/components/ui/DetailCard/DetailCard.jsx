@@ -3,7 +3,7 @@ import { Card, Grid } from "./DetailCard.styles";
 
 const DetailCard = ({card}) => {
 
-  const query = window.matchMedia('(max-width: 600px)');
+  const query = window.matchMedia('(max-width: 768px)');
   const createMarkup = () => {
     return {__html: `${card.techP}`};
   }

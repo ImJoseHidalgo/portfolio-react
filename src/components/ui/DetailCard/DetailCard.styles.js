@@ -80,7 +80,7 @@ export const Card = styled.div`
     transform-origin: left;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     padding-bottom: 5rem;
     h3 {
       font-size: 3rem;
@@ -115,7 +115,7 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     margin: 3rem 0;
     grid-template-columns: repeat(2, 1fr);
     ul:first-child {
