@@ -663,6 +663,12 @@ export const MenuContainer = styled.div`
     transition: 0.8s cubic-bezier(1, 0, 0, 1);
   }
 
+  @media only screen and (max-width: 1280px) {
+    &.active {
+      /* right: ; */
+      padding-left: 10rem;
+    }
+  }
   @media only screen and (max-width: 768px) {
     z-index: 30;
 

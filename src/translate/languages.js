@@ -205,7 +205,7 @@ export const spanish = {
   pl: 'portafolio',
   homeAbout: {
     tit: 'Hola! 👋',
-    desc: `Soy José Hidalgo, desarrollador frontend enfocado en construir bellas interfases y experiencias de usuario.`,
+    desc: `Soy José Hidalgo, desarrollador frontend enfocado en construir bellas interfaces y experiencias de usuario.`,
     butt: 'MÁS DE MI'
   },
   homeblog: {
