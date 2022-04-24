@@ -12,8 +12,12 @@ const AboutHomeSection = () => {
       =============================== --> */}
       <Section2 className="sect-2" id="about">
         <div className="container">
-          <h2>{pageContent.homeAbout.tit}</h2>
-          <h2>{pageContent.homeAbout.desc}</h2>
+          <div className="h2-container">
+            <h2>{pageContent.homeAbout.tit}</h2>
+          </div>
+          <div className="h2-container2">
+            <h2>{pageContent.homeAbout.desc}</h2>
+          </div>
           <div className="bt">
             <Link to='/about' className="btn" >
               {pageContent.homeAbout.butt}
