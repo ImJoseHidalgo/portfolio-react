@@ -21,18 +21,29 @@ export const Section2 = styled.section`
     width: 60%;
     font-size: 2.8rem;
     font-weight: 600;
-    transition: 0.5s 0s;
-    transform: scaleY(0);
   }
-  .container h2:nth-child(2) {
+  .container .h2-container2,
+  .container .h2-container {
+    overflow: hidden;
+  }
+  .container .h2-container h2 {
+    transition: 0.3s 0s ease;
+    transform: translateY(100%);
+  }
+  .container .h2-container2 h2 {
     margin: 2rem 0 4rem;
+    transform: translateY(150%);
+    transition: 0.3s 0s ease;
   }
   .container span {
     position: relative;
   }
   .container .bt {
-    transform: scaleY(0);
-    transition: 0.3s;
+    overflow: hidden;
+  }
+  .container .bt .btn {
+    transform: translateY(110%);
+    transition: transform 0.3s 0s ease;
   }
 
   /* .container .btn {
