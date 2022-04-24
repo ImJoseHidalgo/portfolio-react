@@ -140,7 +140,7 @@ export const Section2 = styled.section`
       position: absolute;
       z-index: 3;
       width: 90%;
-      top: 45%;
+      top: 50%;
       margin: 0 !important;
       /* height: 23rem; */
     }
@@ -154,7 +154,7 @@ export const Section2 = styled.section`
     } */
     .container h2 {
       width: 100%;
-      margin: 3rem 0;
+      margin: 0;
       font-size: 2rem;
       transform: scaleY(1);
     }
