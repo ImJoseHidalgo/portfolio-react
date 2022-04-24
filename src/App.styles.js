@@ -49,16 +49,16 @@ export const Main = styled.main`
 
   &.active .sect-2 .container .h2-container h2 {
     transform: translateY(0);
-    transition: transform 0.8s 0s;
+    transition: transform 0.8s 0.3s;
   }
   &.active .sect-2 .container .h2-container2 h2 {
     transform: translateY(0);
-    transition: transform 0.8s .3s;
+    transition: transform 0.8s .6s;
   }
   /* &.active .sect-2 .container a, */
   &.active .sect-2 .container .bt .btn {
     transform: translateY(0);
-    transition: transform 0.5s 0.9s;
+    transition: transform 0.5s 1.1s;
 
   }
   /* @media only screen and (min-width: 1441px) {
