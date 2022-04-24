@@ -47,11 +47,19 @@ export const Main = styled.main`
     transition: 0.3s;
   }
 
-  &.active .sect-2 .container h2,
-  &.active .sect-2 .container a,
-  &.active .sect-2 .container .bt {
-    transform: scaleY(1);
-    transition: transform 0.3s 0.6s;
+  &.active .sect-2 .container .h2-container h2 {
+    transform: translateY(0);
+    transition: transform 0.8s 0s;
+  }
+  &.active .sect-2 .container .h2-container2 h2 {
+    transform: translateY(0);
+    transition: transform 0.8s .3s;
+  }
+  /* &.active .sect-2 .container a, */
+  &.active .sect-2 .container .bt .btn {
+    transform: translateY(0);
+    transition: transform 0.5s 0.9s;
+
   }
   /* @media only screen and (min-width: 1441px) {
     &.active .sect-1 .picture {
