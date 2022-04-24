@@ -78,10 +78,10 @@ export const Main = styled.main`
       width: 80%;
     }
     &.active:after {
-      width: 100%;
+      width: 80%;
     }
     &.active:before {
-      width: 0;
+      width: 20%;
     }
     &.active .sect-1 .picture {
       left: calc(100% - 30.5rem);
@@ -92,6 +92,15 @@ export const Main = styled.main`
       opacity: 1;
       transform: scaleY(1);
       transition: 0.3s;
+    }
+
+    &.active .sect-1 .name-container .name,
+    &.active .sect-1 .name-container .prof,
+    &.active .sect-1 .portf-container .name,
+    &.active .sect-2 .container .h2-container h2,
+    &.active .sect-2 .container .h2-container2 h2,
+    &.active .sect-2 .container .bt .btn {
+      transition: none;
     }
   }
 `
