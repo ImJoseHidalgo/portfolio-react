@@ -26,6 +26,7 @@ export const Section1 = styled.section`
     z-index: 2;
     bottom: 5%;
     left: 3%;
+    overflow: hidden;
   }
   .name-container .name {
     font-weight: 700;
@@ -39,13 +40,20 @@ export const Section1 = styled.section`
   .name-container .prof,
   .portf-container .name {
     text-transform: uppercase;
-    opacity: 1;
-    transform: scaleY(1);
-    transition: 0.3s 0.5s;
+    /* transform: scaleY(1); */
+    transform: translateY(160%);
+    transition: 0.3s 0.5s ease;
+  }
+  .name-container.onload .name,
+  .name-container.onload .prof,
+  .portf-container.onload .name {
+    transition: 0.8s 0.5s ease;
+    transform: translateY(0);
   }
 
   .portf-container .name {
     color: var(--lightBackground);
+    /* transform: translateY(100%); */
   }
   .portf-container {
     position: fixed;
@@ -53,6 +61,7 @@ export const Section1 = styled.section`
     bottom: 5%;
     right: 3%;
     cursor: pointer;
+    overflow: hidden;
   }
   .portf-container a {
     font-weight: 700;
