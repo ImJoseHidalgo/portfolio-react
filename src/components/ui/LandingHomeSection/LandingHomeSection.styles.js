@@ -4,35 +4,6 @@ export const Section1 = styled.section`
   position: relative;
   height: 100vh;
 
-  .onload-bg {
-    background: var(--darkBackground);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    transition: .8s 1s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .onload-bg.onload {
-    transform: translateY(100%);
-  }
-  .onload-bg .text {
-    overflow: hidden;
-  }
-  .onload-bg h1 {
-    color: var(--lightBackground);
-    font-size: 3rem;
-    transform: translateY(100%);
-  }
-  .onload-bg.onload h1 {
-    transform: translateY(0);
-    transition: transform 0.5s 0.2s;
-  }
-
   .picture {
     position: fixed;
     z-index: 0;
@@ -76,7 +47,7 @@ export const Section1 = styled.section`
   .name-container.onload .name,
   .name-container.onload .prof,
   .portf-container.onload .name {
-    transition: 0.3s 0.5s ease;
+    transition: 0.8s 0.5s ease;
     transform: translateY(0);
   }
 

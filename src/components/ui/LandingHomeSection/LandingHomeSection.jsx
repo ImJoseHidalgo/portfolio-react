@@ -51,11 +51,6 @@ const LandingHomeSection = () => {
             </p>
           </Link>
         </div>
-        <div className="onload-bg" ref={background}>
-          <div className="text">
-            <h1>WELLCOME 👋</h1>
-          </div>
-        </div>
       </Section1>
     </>
   )

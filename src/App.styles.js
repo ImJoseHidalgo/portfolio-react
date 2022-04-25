@@ -42,11 +42,11 @@ export const Main = styled.main`
   &.active .sect-1 .name-container .name,
   &.active .sect-1 .name-container .prof {
     transform: translateY(160%);
-    transition: 0.8s ease;
+    transition: 0.3s ease;
   }
   &.active .sect-1 .portf-container .name {
     transform: translateY(100%);
-    transition: 0.8s ease;
+    transition: 0.3s ease;
   }
 
   &.active .sect-2 .container .h2-container h2 {
