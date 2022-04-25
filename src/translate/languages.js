@@ -51,7 +51,7 @@ export const english = {
     read: 'Read post ------>'
   },
   portfolio: {
-    t1: 'My proyects',
+    t1: 'My projects',
     t2: 'Note',
     ap1: 'My portfolio consists of designs for websites, applications, as well as some extra tools. In each job I put the maximum effort, perseverance, attention and creativity.',
     ap2: 'These are some of the projects that I develop. You can also find the code of each project on my',
@@ -206,7 +206,7 @@ export const spanish = {
   homeAbout: {
     tit: 'Hola! 👋',
     desc: `Soy José Hidalgo, desarrollador frontend enfocado en construir bellas interfaces y experiencias de usuario.`,
-    butt: 'MÁS DE MI'
+    butt: 'MÁS DE MI',
   },
   homeblog: {
     title: 'Mi Blog',

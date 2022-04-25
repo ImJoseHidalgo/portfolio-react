@@ -11,6 +11,7 @@ import PortfolioScreen from './components/pages/Portfolioscreen/PortfolioScreen'
 import ContactScreen from './components/pages/ContactScreen/ContactScreen';
 import { Main } from './App.styles';
 import PostScreen from './components/pages/PostScreen/PostScreen';
+import { Redirect } from 'react-router-dom';
 
 const App = () => {
 
@@ -29,7 +30,7 @@ const App = () => {
           <Route exact path='/portfolio' component={PortfolioScreen} />
           <Route exact path='/contact' component={ContactScreen} />
           <Route exact path='/' component={Home} />
-          <Route component={Page404} />
+          <Redirect to='/' />
         </Switch>
         <ContactFooter />
       </Main>
