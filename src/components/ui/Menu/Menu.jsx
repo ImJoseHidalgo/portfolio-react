@@ -15,6 +15,8 @@ const Menu = () => {
 
   useEffect(() => {
     menuActions();
+    const defLang = localStorage.getItem('lang');
+    document.body.id = defLang ? defLang : 'es';
   }, []);
 
   const setLangEnglish = () => {
